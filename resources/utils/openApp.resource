@@ -32,7 +32,7 @@ Open TED App
     ELSE IF    '${EMULATOR}' == 'local'
 
         Open Application
-        ...  remote_url=http://localhost:4723/wd/hub
+        ...  remote_url=http://localhost:4723
         ...  automationName=${automation_name}
         ...  platformName=${PLATFORM_NAME}
         ...  deviceName=${DEVICE_NAME}
@@ -43,22 +43,22 @@ Open TED App
 
     END
 
-Send App To Browserstack
-        IF    '${EMULATOR}' == 'browserstack'
-            IF    '${APP_DOWNLOAD_URL}'
-                ${bs}  Browserstack API
-                ...    app_name=app.apk
-                ...    app_path=${app_path}
-                ...    auth=${BROWSERSTACK_AUTHORIZATION}
-            ELSE
-                ${bs}  Browserstack API
-                ...    app_name=app.apk
-                ...    app_path=${app_path}
-                ...    auth=${BROWSERSTACK_AUTHORIZATION}
-            END
+# Send App To Browserstack
+#         IF    '${EMULATOR}' == 'browserstack'
+#             IF    '${APP_DOWNLOAD_URL}'
+#                 ${bs}  Browserstack API
+#                 ...    app_name=app.apk
+#                 ...    app_path=${app_path}
+#                 ...    auth=${BROWSERSTACK_AUTHORIZATION}
+#             ELSE
+#                 ${bs}  Browserstack API
+#                 ...    app_name=app.apk
+#                 ...    app_path=${app_path}
+#                 ...    auth=${BROWSERSTACK_AUTHORIZATION}
+#             END
 
-            Set Suite Variable    ${bs} 
-        END
+#             Set Suite Variable    ${bs} 
+#         END
 
 Define Appium Driver
 

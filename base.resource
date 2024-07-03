@@ -30,11 +30,11 @@ Resource    resources/utils/customKeywords.resource
 
 *** Variables ***
 ${PLATFORM_NAME}   android
-${DEVICE_NAME}     Google Pixel 7 Pro
+${DEVICE_NAME}     Pixel 7 API 30
 ${EMULATOR}        local    #local ou browserstack
-${BROWSERSTACK_USER_NAME}        %{BROWSERSTACK_USER_NAME=${None}}
-${BROWSERSTACK_ACCESS_KEY}       %{BROWSERSTACK_ACCESS_KEY=${None}}
-${BROWSERSTACK_AUTHORIZATION}    %{BROWSERSTACK_AUTHORIZATION=${None}}
-${BROWSERSTACK_PROJECT}          TED_ROBOTCOURSES
-&{BROWSERSTACK_OPTIONS}          appiumVersion=2.0.1
-${APP_DOWNLOAD_URL}              %{APP_DOWNLOAD_URL=${None}}
+# ${BROWSERSTACK_USER_NAME}        %{BROWSERSTACK_USER_NAME=${None}}
+# ${BROWSERSTACK_ACCESS_KEY}       %{BROWSERSTACK_ACCESS_KEY=${None}}
+# ${BROWSERSTACK_AUTHORIZATION}    %{BROWSERSTACK_AUTHORIZATION=${None}}
+# ${BROWSERSTACK_PROJECT}          TED_ROBOTCOURSES
+# &{BROWSERSTACK_OPTIONS}          appiumVersion=2.0.1
+# ${APP_DOWNLOAD_URL}              %{APP_DOWNLOAD_URL=${None}}

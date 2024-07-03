@@ -1,9 +1,9 @@
 *** Settings ***
 Resource      ../base.resource
-Suite Setup    Send App To Browserstack
+# Suite Setup    Send App To Browserstack
 Test Setup     Open TED App
 Test Teardown   Run Keywords
-...    Send Test Status To Browserstack
+# ...    Send Test Status To Browserstack
 ...    Close Application
 
 *** Test Cases ***
