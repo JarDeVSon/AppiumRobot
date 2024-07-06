@@ -1,5 +1,6 @@
 *** Settings ***
 Resource    ../../base.resource
+Library    ../../.venv/Lib/site-packages/robot/libraries/Process.py
 
 *** Keywords ***
 Wait Until Element Is Enabled
@@ -22,6 +23,18 @@ Wait Enabled And Click Element
 
     Wait Until Element Is Enabled    ${locator}
     Click Element    ${locator}
+
+Simulate Face ID
+    [Documentation]    Simula a autenticação Face ID no dispositivo iOS
+    # Este comando requer o uso de instrumentos de simulação Face ID no iOS
+    Run Process    xcrun simctl biometric enroll ${DEVICE_NAME} face
+    # Comando para autenticar com Face ID no iOS
+    Run Process    xcrun simctl biometric trigger ${DEVICE_NAME} face
+
+Simulate Fingerprint
+    [Documentation]    Simula a autenticação de impressão digital no dispositivo
+    # Comando ADB para simular impressão digital no emulador
+    Run Process    adb    -s    ${DEVICE_NAME}    emu    finger    touch    1
 
 Wait Visible And Input Text
     [Arguments]    ${locator}    ${text}
