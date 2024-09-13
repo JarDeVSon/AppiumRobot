@@ -45,7 +45,7 @@ jobs:
 
       - name: Start up Appium
         run: |
-          nohup appium -p 4725 -pa /wd/hub &
+          nohup appium -p 4723 -pa /wd/hub &
 
       - name: Enable KVM group perms
         run: |
@@ -61,7 +61,7 @@ jobs:
           arch: x86_64
           profile: pixel_3
           script: |
-            robot -d ./reports .
+            robot -d ./reports APPIUM_PORT:4723 .
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
