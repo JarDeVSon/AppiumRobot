@@ -79,8 +79,8 @@ Swipe Until Element Is Visible
 Access TED APP Without Login
     [Arguments]    ${interest}    ${lookingFor}
 
-    Click In Lest Go
-    Select Interest    ${interest}
+    Click in Lets Go
+    Select Interests   ${interest}
     Select Looking For    ${lookingFor}
     Skip Sing In
     View Home
