@@ -1,4 +1,4 @@
-name: Browserstack TED Test
+name: Browserstack Test
 
 on:
   push:
