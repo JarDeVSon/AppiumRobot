@@ -5,8 +5,8 @@ Resource      ../base.resource
 Cenário: Acessar TED sem Login
     [Tags]    login
     
-    Click In Lest Go
-    Select Interest    Technology
+    Click in Lets Go
+    Select Interests    Technology
     Select Looking For    Professional growth
     Skip Sing In
     View Home
