@@ -1,12 +1,17 @@
 *** Settings ***
+## Carrega as variáveis do arquivo `.env`
+Library    resources/libs/DotEnv.py
+
 ## Bibliotecas
 Library    AppiumLibrary  timeout=30
+Library    BrowserstackLibrary    username=%{BROWSERSTACK_USERNAME=${None}}  access_key=%{BROWSERSTACK_ACCESS_KEY=${None}}
 Library    String
 
-## Biblioteca Customizada
-Library    resources/libs/browserstack.py
+## Utils
+Resource    resources/utils/openApp.resource
+Resource    resources/utils/customKeywords.resource
 
-## Variáveis
+## Locators
 Variables    resources/locators/homeLocators.yaml
 Variables    resources/locators/interestLocators.yaml
 Variables    resources/locators/lookingForLocators.yaml
@@ -24,17 +29,10 @@ Resource    resources/pages/welcomePage.resource
 Resource    resources/pages/searchPage.resource
 Resource    resources/pages/resultSearchPage.resource
 
-## Utils
-Resource    resources/utils/openApp.resource
-Resource    resources/utils/customKeywords.resource
-
 *** Variables ***
 ${PLATFORM_NAME}   android
-${DEVICE_NAME}     Pixel 7 API 30
 ${EMULATOR}        local    #local ou browserstack
-# ${BROWSERSTACK_USER_NAME}        %{BROWSERSTACK_USER_NAME=${None}}
-# ${BROWSERSTACK_ACCESS_KEY}       %{BROWSERSTACK_ACCESS_KEY=${None}}
-# ${BROWSERSTACK_AUTHORIZATION}    %{BROWSERSTACK_AUTHORIZATION=${None}}
-# ${BROWSERSTACK_PROJECT}          TED_${PLATFORM_NAME}
-# &{BROWSERSTACK_OPTIONS}          appiumVersion=2.0.1
-# ${APP_DOWNLOAD_URL}              %{APP_DOWNLOAD_URL=${None}}
+# ${BS_USER_NAME}        %{BROWSERSTACK_USER_NAME=${None}}
+# ${BS_ACCESS_KEY}       %{BROWSERSTACK_ACCESS_KEY=${None}}
+&{BROWSERSTACK_OPTIONS}          appiumVersion=2.0.1
+${APP_DOWNLOAD_URL}              %{APP_DOWNLOAD_URL=${None}}

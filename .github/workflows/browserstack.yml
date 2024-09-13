@@ -1,0 +1,78 @@
+name: Browserstack TED Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  execute_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create .env file
+        run: |
+          echo "BROWSERSTACK_USERNAME=${{ secrets.BROWSERSTACK_USERNAME }}" >> .env
+          echo "BROWSERSTACK_ACCESS_KEY=${{ secrets.BROWSERSTACK_ACCESS_KEY }}" >> .env
+          echo "GH_ACTIONS_RUNNER=${{ github.run_number }}" >> .env
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.8
+
+      - uses: snok/install-poetry@v1
+        with:
+          version: 1.8.3
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+
+      - name: Install Dependencies
+        run: poetry install --no-root
+
+      - name: Execute Tests
+        id: execute_test
+        run: poetry run robot -d ./reports .
+        continue-on-error: true
+
+      - name: Execute Flaky Tests
+        if: steps.execute_test.outcome != 'success'
+        run: |
+          poetry run robot -d ./reports --rerunfailed ./reports/output.xml --output rerun.xml .
+        continue-on-error: true
+
+      - name: Merge Test Reports
+        if: steps.execute_test.outcome != 'success'
+        run: |
+          poetry run rebot -d ./reports --merge ./reports/output.xml ./reports/rerun.xml
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: reports
+          path: reports
+
+  generate_report:
+    if: always()
+    needs: [execute_test]   
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download reports
+        uses: actions/download-artifact@v1
+        with:
+          name: reports
+
+      - name: Send report to commit
+        uses: joonvena/robotframework-reporter-action@v2.4
+        with:
+          gh_access_token: ${{ secrets.GITHUB_TOKEN }}
+          sha: ${{ github.sha }}
+          pull_request_id: ${{ github.event.number }}

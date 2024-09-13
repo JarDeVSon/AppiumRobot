@@ -4,3 +4,5 @@ appium-python-client
 docutils
 PyYAML
 requests
+robotframework-browserstack
+python-dotenv

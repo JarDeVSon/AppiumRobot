@@ -1,6 +1,5 @@
 *** Settings ***
 Resource    ../../base.resource
-Library    ../../.venv/Lib/site-packages/robot/libraries/Process.py
 
 *** Keywords ***
 Wait Until Element Is Enabled
@@ -23,18 +22,6 @@ Wait Enabled And Click Element
 
     Wait Until Element Is Enabled    ${locator}
     Click Element    ${locator}
-
-Simulate Face ID
-    [Documentation]    Simula a autenticação Face ID no dispositivo iOS
-    # Este comando requer o uso de instrumentos de simulação Face ID no iOS
-    Run Process    xcrun simctl biometric enroll ${DEVICE_NAME} face
-    # Comando para autenticar com Face ID no iOS
-    Run Process    xcrun simctl biometric trigger ${DEVICE_NAME} face
-
-Simulate Fingerprint
-    [Documentation]    Simula a autenticação de impressão digital no dispositivo
-    # Comando ADB para simular impressão digital no emulador
-    Run Process    adb    -s    ${DEVICE_NAME}    emu    finger    touch    1
 
 Wait Visible And Input Text
     [Arguments]    ${locator}    ${text}
@@ -66,14 +53,51 @@ Swipe to Element
         ...    offset_y=0
     END
 
-Send Test Status To Browserstack
+Swipe Until Element Is Visible
+    [Arguments]    ${locator}
+    
+    ${x}  Get Window Width
+    ${y}  Get Window Height
 
-    ${session_id}  Get Appium SessionId
+    ${start_x}  Evaluate  ${x} / 2
+    ${start_y}  Evaluate  ${y} / 2
 
+    WHILE    ${True}
+        ${status}    Run Keyword And Return Status    Wait Until Element Is Visible    ${locator}  1
+
+        IF    ${status}
+            Exit For Loop
+        END
+
+        Swipe    
+        ...    start_x=${start_x}
+        ...    start_y=${start_y}
+        ...    offset_x=${start_x}
+        ...    offset_y=0
+    END
+
+Access TED APP Without Login
+    [Arguments]    ${interest}    ${lookingFor}
+
+    Click In Lest Go
+    Select Interest    ${interest}
+    Select Looking For    ${lookingFor}
+    Skip Sing In
+    View Home
+
+Send App To Browserstack
     IF    '${EMULATOR}' == 'browserstack'
-        Scenario Status
-        ...  session_id=${session_id}
-        ...  status=${TEST_STATUS}
-        ...  reason=${TEST_MESSAGE}
-        ...  auth=${BROWSERSTACK_AUTHORIZATION}
+        Upload Application to Browserstack
+        ...    app_name=ted.apk
+        ...    app_path=${CURDIR}${/}..${/}app${/}app.apk
+        ...    custom_id=TED_OUVINTE_123
+    END
+
+Cancel Version Update
+
+    ${deniedButton}  Set Variable  //android.widget.Button[@resource-id="android:id/button2"]
+    ${status}  Run Keyword And Return Status    Wait Until Element Is Visible    ${deniedButton}  timeout=3
+
+    IF    ${status}
+        Wait Visible And Click Element    ${deniedButton}
     END
