@@ -60,7 +60,7 @@ jobs:
 
     steps:
       - name: Download reports
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v3
         with:
           name: reports
 
