@@ -87,7 +87,7 @@ Access TED APP Without Login
 
 Send App To Browserstack
     IF    '${EMULATOR}' == 'browserstack'
-        Upload Application to Browserstack
+        Upload Application to Browserstack    # robotcode: ignore
         ...    app_name=ted.apk
         ...    app_path=${CURDIR}${/}..${/}app${/}app.apk
         ...    custom_id=TED_OUVINTE_123

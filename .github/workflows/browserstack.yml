@@ -31,7 +31,7 @@ jobs:
 
       - name: Execute Tests
         id: execute_test
-        run: robot -d reports .
+        run: robot -d reports -v EMULATOR:browserstack -v PLATFORM_NAME:android .
         continue-on-error: false
 
       - name: Execute Flaky Tests
