@@ -67,7 +67,7 @@ jobs:
           arch: x86_64
           profile: pixel_3
           script: |
-            robot -d ./reports -x ./reports/report.html -v APPIUM_PORT:4725 -i clock tests/clock.robot
+            robot -d reports -x report.html -v APPIUM_PORT:4725 -i clock tests/clock.robot
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
