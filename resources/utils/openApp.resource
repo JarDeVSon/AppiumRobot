@@ -13,7 +13,7 @@ Open TED App
         ...    app=${CURDIR}${/}..${/}app${/}app.apk
         ...    disableIdLocatorAutocompletion=${True}
     ELSE IF  '${EMULATOR}' == 'browserstack'
-        Open Application In Browserstack
+        Open Application In Browserstack    # robotcode: ignore
         ...  automationName=UIAutomator2
         ...  platformName=${PLATFORM_NAME}
         ...  deviceName=Google Pixel 7 Pro
