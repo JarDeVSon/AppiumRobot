@@ -1,10 +1,10 @@
 name: Browserstack Test
 
 on:
-  # push:
-  #   branches: [ "main" ]
-  # pull_request:
-  #   branches: [ "main" ]
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
   workflow_dispatch:
 
@@ -31,7 +31,7 @@ jobs:
 
       - name: Execute Tests
         id: execute_test
-        run: robot -d reports -v EMULATOR:browserstack -v PLATFORM_NAME:android .
+        run: robot -d reports -v EMULATOR:browserstack -v PLATFORM_NAME:android -i regressivo .
         continue-on-error: false
 
       - name: Execute Flaky Tests

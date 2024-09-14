@@ -3,7 +3,7 @@ Resource      ../base.resource
 
 *** Test Cases ***
 Cenário: Acessar TED sem Login
-    [Tags]    login
+    [Tags]    regressivo
     
     Click in Lets Go
     Select Interests    Technology

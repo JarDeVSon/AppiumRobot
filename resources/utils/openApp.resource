@@ -6,7 +6,7 @@ Open TED App
 
     IF    '${EMULATOR}' == 'local'
         Open Application    
-        ...    remote_url=http://localhost:4723/wd/hub
+        ...    remote_url=http://localhost:4723
         ...    automationName=UIAutomator2
         ...    platformName=${PLATFORM_NAME}
         ...    deviceName=Google Pixel 7 Pro

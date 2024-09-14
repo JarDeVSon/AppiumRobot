@@ -31,7 +31,7 @@ Resource    resources/pages/resultSearchPage.resource
 
 *** Variables ***
 ${PLATFORM_NAME}   android
-${EMULATOR}        browserstack    #local ou browserstack
+${EMULATOR}        local    #local ou browserstack
 ${BS_USER_NAME}        %{BROWSERSTACK_USER_NAME=${None}}
 ${BS_ACCESS_KEY}       %{BROWSERSTACK_ACCESS_KEY=${None}}
 &{BROWSERSTACK_OPTIONS}          appiumVersion=2.0.1

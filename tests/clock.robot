@@ -16,6 +16,7 @@ ${APP_ACTIVITY}    com.android.deskclock.DeskClock
 *** Test Cases ***
 Open clock app
     [Tags]  clock
+    
     Open Application    ${APPIUM_URL}
     ...    automationName=${AUTOMATION_NAME}
     ...    platformName=${PLATFORM_NAME}
