@@ -32,7 +32,7 @@ jobs:
 
       - name: Execute Tests
         id: execute_test
-        run: robot -d ./reports -v EMULATOR:browserstack -v PLATFORM_NAME:android -i regressivo .
+        run: robot -d ./reports -x ./reports/report.html -v EMULATOR:browserstack -v PLATFORM_NAME:android -i regressivo .
         continue-on-error: true
 
       - name: Execute Flaky Tests
