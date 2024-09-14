@@ -38,13 +38,13 @@ jobs:
       - name: Execute Flaky Tests
         if: steps.execute_test.outcome != 'success'
         run: |
-          robot -d ./reports --rerunfailed ./reports/output.xml --output rerun.xml .
+          robot -d ./reports -x ./reports/report.html --rerunfailed ./reports/output.xml --output rerun.xml .
         continue-on-error: true
 
       - name: Merge Test Reports
         if: steps.execute_test.outcome != 'success'
         run: |
-          rebot -d ./reports --merge ./reports/output.xml ./reports/rerun.xml
+          rebot -d ./reports -x ./reports/report.html --merge ./reports/output.xml ./reports/rerun.xml
 
           
       - name: Upload test results
