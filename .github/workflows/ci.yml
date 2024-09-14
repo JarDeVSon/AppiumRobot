@@ -74,10 +74,10 @@ jobs:
         if: always()
         with:
           name: reports
-          path: "**/reports/index.html"
+          path: "**/reports/"
 
       - name: Implantar Resultados no Github Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: "**/reports/index.html"          
+          publish_dir: "**/reports/"          
