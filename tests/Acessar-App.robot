@@ -1,9 +1,8 @@
 *** Settings ***
 Resource      ../base.resource
-
+Test Tags     regressivo
 *** Test Cases ***
 Cenário: Acessar TED sem Login
-    [Tags]    regressivo
     
     Click in Lets Go
     Select Interests    Technology

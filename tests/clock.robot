@@ -1,7 +1,6 @@
 *** Settings ***
 Library    AppiumLibrary
-
-
+Test Tags    clock
 *** Variables ***
 ${APPIUM_PORT}    4723
 ${APPIUM_URL}    http://localhost:${APPIUM_PORT}/wd/hub
@@ -15,7 +14,6 @@ ${APP_ACTIVITY}    com.android.deskclock.DeskClock
 
 *** Test Cases ***
 Open clock app
-    [Tags]  clock
     
     Open Application    ${APPIUM_URL}
     ...    automationName=${AUTOMATION_NAME}

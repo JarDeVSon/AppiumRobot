@@ -1,9 +1,9 @@
 *** Settings ***
 Resource      ../base.resource
+Test Tags     regressivo
 
 *** Test Cases ***
 Cenário: Realizar Pesquisa Por um Video
-    [Tags]    regressivo
 
     Access TED APP Without Login    interest=Technology    lookingFor=Professional growth
     Click In Browse Tab Icon
