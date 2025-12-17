@@ -26,13 +26,12 @@ jobs:
         with:
           python-version: 3.12
 
-
       - name: Install Dependencies
         run: python -m pip install -r requirements.txt
 
       - name: Execute Tests
         id: execute_test
-        run: robot -d ./reports -v EMULATOR:browserstack -v PLATFORM_NAME:android -i regressivo .
+        run: robot -d ./reports/ -v EMULATOR:browserstack -v PLATFORM_NAME:android -i regressivo .
         continue-on-error: true
 
       - name: Execute Flaky Tests
