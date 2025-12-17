@@ -50,7 +50,7 @@ jobs:
         if: always()
         with:
           name: reports
-          path: reports
+          path: "**/reports/"
 
   generate_report:
     if: always()
