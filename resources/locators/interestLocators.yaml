@@ -1,4 +1,0 @@
-interest:
-  nextButton: Next
-  android:
-    interestList: //android.widget.TextView[@resource-id="Typography" and @text="{text}"]

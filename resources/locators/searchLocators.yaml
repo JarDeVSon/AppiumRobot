@@ -1,4 +1,0 @@
-search:
-  android:
-    searchInput: //android.widget.EditText[@text="Search"]
-    resultList: xpath=(//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
