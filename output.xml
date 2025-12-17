@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.12.12 on linux)" generated="2025-12-17T19:17:57.836082" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.12.12 on linux)" generated="2025-12-17T19:35:45.690002" rpa="false" schemaversion="5">
 <suite id="s1" name="AppiumRobot" source="/home/runner/work/AppiumRobot/AppiumRobot">
 <suite id="s1-s1" name="Tests" source="/home/runner/work/AppiumRobot/AppiumRobot/tests">
 <kw name="Send App To Browserstack" owner="customKeywords" type="SETUP">
@@ -10,13 +10,13 @@
 <arg>app_path=/home/runner/work/AppiumRobot/AppiumRobot/resources/utils${/}..${/}app${/}app.apk</arg>
 <arg>custom_id=TED_OUVINTE_123</arg>
 <doc>Uploads an app to Browserstack, either through the PATH or app URL.</doc>
-<status status="PASS" start="2025-12-17T19:17:58.119959" elapsed="1.389680"/>
+<status status="PASS" start="2025-12-17T19:35:45.974548" elapsed="1.143207"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:17:58.119418" elapsed="1.390344"/>
+<status status="PASS" start="2025-12-17T19:35:45.973968" elapsed="1.143922"/>
 </branch>
-<status status="PASS" start="2025-12-17T19:17:58.119390" elapsed="1.390422"/>
+<status status="PASS" start="2025-12-17T19:35:45.973938" elapsed="1.144009"/>
 </if>
-<status status="PASS" start="2025-12-17T19:17:58.119199" elapsed="1.390686"/>
+<status status="PASS" start="2025-12-17T19:35:45.973730" elapsed="1.144304"/>
 </kw>
 <suite id="s1-s1-s1" name="Acessar-App" source="/home/runner/work/AppiumRobot/AppiumRobot/tests/Acessar-App.robot">
 <test id="s1-s1-s1-t1" name="Cenário: Acessar TED sem Login" line="5">
@@ -36,13 +36,13 @@ Please check https://appium.io/docs/en/2.19/guides/caps/
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | No     | alias             |</doc>
-<status status="NOT RUN" start="2025-12-17T19:17:59.522776" elapsed="0.000024"/>
+<status status="NOT RUN" start="2025-12-17T19:35:47.145880" elapsed="0.000025"/>
 </kw>
-<status status="NOT RUN" start="2025-12-17T19:17:59.522562" elapsed="0.000284"/>
+<status status="NOT RUN" start="2025-12-17T19:35:47.145643" elapsed="0.000319"/>
 </branch>
 <branch type="ELSE IF" condition="'${EMULATOR}' == 'browserstack'">
 <kw name="Open Application In Browserstack" owner="BrowserstackLibrary">
-<msg time="2025-12-17T19:18:22.118437" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:37.325148" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>automationName=UIAutomator2</arg>
 <arg>platformName=${PLATFORM_NAME}</arg>
@@ -56,23 +56,20 @@ Please check https://appium.io/docs/en/2.19/guides/caps/
 <arg>interactiveDebugging=${True}</arg>
 <doc>This keyword will open the application in Browserstack, sending the desired 
 capabilities that have been configured.</doc>
-<status status="PASS" start="2025-12-17T19:17:59.523036" elapsed="22.595503"/>
+<status status="PASS" start="2025-12-17T19:35:47.146148" elapsed="50.179103"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:17:59.522870" elapsed="22.595763"/>
+<status status="PASS" start="2025-12-17T19:35:47.145987" elapsed="50.179351"/>
 </branch>
-<status status="PASS" start="2025-12-17T19:17:59.522539" elapsed="22.596140"/>
+<status status="PASS" start="2025-12-17T19:35:47.145617" elapsed="50.179766"/>
 </if>
-<status status="PASS" start="2025-12-17T19:17:59.522352" elapsed="22.596425"/>
+<status status="PASS" start="2025-12-17T19:35:47.145374" elapsed="50.180096"/>
 </kw>
 <kw name="Click in Lets Go" owner="welcomePage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:24.619084" level="INFO">criteria is Next
-criteria is Next
+<msg time="2025-12-17T19:36:39.781153" level="INFO">criteria is Next
 criteria is Next</msg>
-<msg time="2025-12-17T19:18:24.619176" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
-  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:39.781240" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
@@ -80,74 +77,74 @@ criteria is Next</msg>
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:18:22.119896" elapsed="2.499388"/>
+<status status="PASS" start="2025-12-17T19:36:37.326627" elapsed="2.454707"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:24.621335" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:18:25.442963" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:25.443037" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:39.783057" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:36:40.673944" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:36:40.674014" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:24.619558" elapsed="0.823545"/>
+<status status="PASS" start="2025-12-17T19:36:39.781589" elapsed="0.892497"/>
 </kw>
 <arg>${welcome.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:18:22.119366" elapsed="3.323842"/>
+<status status="PASS" start="2025-12-17T19:36:37.326087" elapsed="3.348102"/>
 </kw>
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:26.902490" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:26.902568" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:42.000364" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:36:42.000449" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:18:25.444398" elapsed="1.458246"/>
+<status status="PASS" start="2025-12-17T19:36:40.675286" elapsed="1.325241"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:26.904392" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:18:27.170034" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:27.170095" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:42.001833" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:36:42.317282" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:36:42.317364" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:26.902905" elapsed="0.267317"/>
+<status status="PASS" start="2025-12-17T19:36:42.000758" elapsed="0.316751"/>
 </kw>
 <arg>${welcome.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:18:25.443507" elapsed="1.726862"/>
+<status status="PASS" start="2025-12-17T19:36:40.674463" elapsed="1.643196"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:18:22.119046" elapsed="5.051400"/>
+<status status="PASS" start="2025-12-17T19:36:37.325779" elapsed="4.991962"/>
 </kw>
 <kw name="Select Interests" owner="interestPage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:27.634623" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
-<msg time="2025-12-17T19:18:27.634686" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:42.762363" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
+<msg time="2025-12-17T19:36:42.762444" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:18:27.171884" elapsed="0.462881"/>
+<status status="PASS" start="2025-12-17T19:36:42.318956" elapsed="0.443577"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:27.636505" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Technology"]'.</msg>
-<msg time="2025-12-17T19:18:27.916365" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
-<msg time="2025-12-17T19:18:27.916444" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:42.764228" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Technology"]'.</msg>
+<msg time="2025-12-17T19:36:43.137936" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
+<msg time="2025-12-17T19:36:43.138014" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:27.634986" elapsed="0.281536"/>
+<status status="PASS" start="2025-12-17T19:36:42.762831" elapsed="0.375252"/>
 </kw>
 <arg>${interest.${PLATFORM_NAME}.interestList.format(text='${interestName}')}</arg>
-<status status="PASS" start="2025-12-17T19:18:27.171171" elapsed="0.745475"/>
+<status status="PASS" start="2025-12-17T19:36:42.318309" elapsed="0.819872"/>
 </kw>
 <kw name="Wait Enabled And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Enabled" owner="customKeywords">
@@ -155,85 +152,82 @@ criteria is Next</msg>
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Enabled" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:27.918763" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:36:43.140322" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:18:28.718637" level="INFO">Element 'Next' is enabled .</msg>
-<msg time="2025-12-17T19:18:28.718734" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:28.718764" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:44.039811" level="INFO">Element 'Next' is enabled .</msg>
+<msg time="2025-12-17T19:36:44.039921" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:36:44.039954" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>*DEPRECATED!!* Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-17T19:18:27.918738" elapsed="0.800085"/>
+<status status="PASS" start="2025-12-17T19:36:43.140297" elapsed="0.899724"/>
 </kw>
-<msg time="2025-12-17T19:18:28.718967" level="INFO">${status} = True</msg>
+<msg time="2025-12-17T19:36:44.040164" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Element Should Be Enabled</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-12-17T19:18:27.918337" elapsed="0.800659"/>
+<status status="PASS" start="2025-12-17T19:36:43.139901" elapsed="0.900294"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2025-12-17T19:18:28.719679" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-12-17T19:36:44.040913" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status}</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-12-17T19:18:28.719204" elapsed="0.000591"/>
+<status status="PASS" start="2025-12-17T19:36:44.040411" elapsed="0.000619"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:18:27.918076" elapsed="0.801758"/>
+<status status="PASS" start="2025-12-17T19:36:43.139664" elapsed="0.901404"/>
 </iter>
-<status status="PASS" start="2025-12-17T19:18:27.918073" elapsed="0.801794"/>
+<status status="PASS" start="2025-12-17T19:36:43.139661" elapsed="0.901438"/>
 </while>
 <arg>${locator}</arg>
 <timeout value="10 seconds"/>
-<status status="PASS" start="2025-12-17T19:18:27.917828" elapsed="0.802095"/>
+<status status="PASS" start="2025-12-17T19:36:43.139380" elapsed="0.901777"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:28.721010" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:18:29.015860" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:29.015924" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:44.042256" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:36:44.428010" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:36:44.428084" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:28.720029" elapsed="0.295971"/>
+<status status="PASS" start="2025-12-17T19:36:44.041262" elapsed="0.386899"/>
 </kw>
 <arg>${interest.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:18:27.916929" elapsed="1.099179"/>
+<status status="PASS" start="2025-12-17T19:36:43.138456" elapsed="1.289810"/>
 </kw>
 <arg>Technology</arg>
-<status status="PASS" start="2025-12-17T19:18:27.170727" elapsed="1.845456"/>
+<status status="PASS" start="2025-12-17T19:36:42.317986" elapsed="2.110347"/>
 </kw>
 <kw name="Select Looking For" owner="lookingForPage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:30.225485" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]
-xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
-<msg time="2025-12-17T19:18:30.225559" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
-  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:45.817702" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
+<msg time="2025-12-17T19:36:45.817774" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:18:29.017657" elapsed="1.207969"/>
+<status status="PASS" start="2025-12-17T19:36:44.429787" elapsed="1.388057"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:30.227034" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]'.</msg>
-<msg time="2025-12-17T19:18:30.416624" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
-<msg time="2025-12-17T19:18:30.416696" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:45.819367" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]'.</msg>
+<msg time="2025-12-17T19:36:46.141765" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
+<msg time="2025-12-17T19:36:46.141904" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:30.225909" elapsed="0.190862"/>
+<status status="PASS" start="2025-12-17T19:36:45.818058" elapsed="0.323927"/>
 </kw>
 <arg>${lookingFor.${PLATFORM_NAME}.lookingForList.format(text='${lookingForName}')}</arg>
-<status status="PASS" start="2025-12-17T19:18:29.016943" elapsed="1.399942"/>
+<status status="PASS" start="2025-12-17T19:36:44.429080" elapsed="1.713024"/>
 </kw>
 <kw name="Wait Enabled And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Enabled" owner="customKeywords">
@@ -241,94 +235,91 @@ xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="P
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Enabled" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:30.418680" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:36:46.144120" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:18:31.243766" level="INFO">Element 'Next' is enabled .</msg>
-<msg time="2025-12-17T19:18:31.243864" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:31.243895" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:46.876245" level="INFO">Element 'Next' is enabled .</msg>
+<msg time="2025-12-17T19:36:46.876340" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:36:46.876371" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>*DEPRECATED!!* Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-17T19:18:30.418656" elapsed="0.825299"/>
+<status status="PASS" start="2025-12-17T19:36:46.144095" elapsed="0.732339"/>
 </kw>
-<msg time="2025-12-17T19:18:31.244110" level="INFO">${status} = True</msg>
+<msg time="2025-12-17T19:36:46.876592" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Element Should Be Enabled</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-12-17T19:18:30.418340" elapsed="0.825798"/>
+<status status="PASS" start="2025-12-17T19:36:46.143775" elapsed="0.732849"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2025-12-17T19:18:31.244800" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-12-17T19:36:46.877288" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status}</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-12-17T19:18:31.244372" elapsed="0.000530"/>
+<status status="PASS" start="2025-12-17T19:36:46.876832" elapsed="0.000554"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:18:30.418099" elapsed="0.826841"/>
+<status status="PASS" start="2025-12-17T19:36:46.143521" elapsed="0.733901"/>
 </iter>
-<status status="PASS" start="2025-12-17T19:18:30.418097" elapsed="0.826876"/>
+<status status="PASS" start="2025-12-17T19:36:46.143519" elapsed="0.733933"/>
 </while>
 <arg>${locator}</arg>
 <timeout value="10 seconds"/>
-<status status="PASS" start="2025-12-17T19:18:30.417863" elapsed="0.827166"/>
+<status status="PASS" start="2025-12-17T19:36:46.143282" elapsed="0.734225"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:31.246103" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:18:31.479106" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:31.479175" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:46.878606" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:36:47.167202" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:36:47.167269" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:31.245131" elapsed="0.234116"/>
+<status status="PASS" start="2025-12-17T19:36:46.877632" elapsed="0.289713"/>
 </kw>
 <arg>${lookingFor.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:18:30.417142" elapsed="1.062234"/>
+<status status="PASS" start="2025-12-17T19:36:46.142409" elapsed="1.025041"/>
 </kw>
 <arg>Professional growth</arg>
-<status status="PASS" start="2025-12-17T19:18:29.016496" elapsed="2.462957"/>
+<status status="PASS" start="2025-12-17T19:36:44.428641" elapsed="2.738874"/>
 </kw>
 <kw name="Skip Sing In" owner="signInPage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:32.575426" level="INFO">criteria is SkipSignInLink</msg>
-<msg time="2025-12-17T19:18:32.575507" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:48.609028" level="INFO">criteria is SkipSignInLink</msg>
+<msg time="2025-12-17T19:36:48.609101" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:18:31.480689" elapsed="1.094905"/>
+<status status="PASS" start="2025-12-17T19:36:47.168800" elapsed="1.440370"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:32.577133" level="INFO">Clicking element 'SkipSignInLink'.</msg>
-<msg time="2025-12-17T19:18:32.786196" level="INFO">criteria is SkipSignInLink</msg>
-<msg time="2025-12-17T19:18:32.786236" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:48.610450" level="INFO">Clicking element 'SkipSignInLink'.</msg>
+<msg time="2025-12-17T19:36:48.878250" level="INFO">criteria is SkipSignInLink</msg>
+<msg time="2025-12-17T19:36:48.878326" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:32.575823" elapsed="0.210493"/>
+<status status="PASS" start="2025-12-17T19:36:48.609377" elapsed="0.269034"/>
 </kw>
 <arg>${signIn.skipButton}</arg>
-<status status="PASS" start="2025-12-17T19:18:31.480023" elapsed="1.306383"/>
+<status status="PASS" start="2025-12-17T19:36:47.168179" elapsed="1.710339"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:18:31.479678" elapsed="1.306791"/>
+<status status="PASS" start="2025-12-17T19:36:47.167797" elapsed="1.710823"/>
 </kw>
 <kw name="View Home" owner="homePage">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:35.045425" level="INFO">criteria is HomeScreen
-criteria is HomeScreen
+<msg time="2025-12-17T19:36:51.158641" level="INFO">criteria is HomeScreen
 criteria is HomeScreen
 criteria is HomeScreen</msg>
-<msg time="2025-12-17T19:18:35.045505" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
-  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:51.158716" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
@@ -338,33 +329,33 @@ criteria is HomeScreen</msg>
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${home.${PLATFORM_NAME}.homeScreen}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:18:32.786977" elapsed="2.258662"/>
+<status status="PASS" start="2025-12-17T19:36:48.879128" elapsed="2.279719"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:18:32.786680" elapsed="2.259082"/>
+<status status="PASS" start="2025-12-17T19:36:48.878862" elapsed="2.280103"/>
 </kw>
 <kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
 <kw name="Update Test Case Status in BrowserStack" owner="BrowserstackLibrary">
-<msg time="2025-12-17T19:18:35.048156" level="INFO">Appium Session ID: 38c1e1d66630ac8b47b76be287816029d9ec8a9f</msg>
-<msg time="2025-12-17T19:18:35.306358" level="INFO">PASS
+<msg time="2025-12-17T19:36:51.160702" level="INFO">Appium Session ID: 1219475fca5511dd921874f083c956f7496abaca</msg>
+<msg time="2025-12-17T19:36:52.024905" level="INFO">PASS
 {"status": "passed", "reason": "Test Passed"}</msg>
 <doc>This keyword must be used as 'TEARDOWN TEST'. </doc>
-<status status="PASS" start="2025-12-17T19:18:35.046685" elapsed="0.259749"/>
+<status status="PASS" start="2025-12-17T19:36:51.159663" elapsed="0.865326"/>
 </kw>
 <kw name="Close Application" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:36.223406" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:36:52.821855" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <doc>Closes the current application and the webdriver session.</doc>
-<status status="PASS" start="2025-12-17T19:18:35.306590" elapsed="0.916939"/>
+<status status="PASS" start="2025-12-17T19:36:52.025178" elapsed="0.796802"/>
 </kw>
 <arg>Update Test Case Status in BrowserStack</arg>
 <arg>Close Application</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2025-12-17T19:18:35.046138" elapsed="1.177467"/>
+<status status="PASS" start="2025-12-17T19:36:51.159242" elapsed="1.662832"/>
 </kw>
 <tag>regressivo</tag>
-<status status="PASS" start="2025-12-17T19:17:59.521826" elapsed="36.701850"/>
+<status status="PASS" start="2025-12-17T19:35:47.144593" elapsed="65.677550"/>
 </test>
-<status status="PASS" start="2025-12-17T19:17:59.509952" elapsed="36.714180"/>
+<status status="PASS" start="2025-12-17T19:35:47.118102" elapsed="65.704561"/>
 </suite>
 <suite id="s1-s1-s2" name="Pesquisar-Video" source="/home/runner/work/AppiumRobot/AppiumRobot/tests/Pesquisar-Video.robot">
 <test id="s1-s1-s2-t1" name="Cenário: Realizar Pesquisa Por um Video" line="6">
@@ -384,13 +375,13 @@ Please check https://appium.io/docs/en/2.19/guides/caps/
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | No     | alias             |</doc>
-<status status="NOT RUN" start="2025-12-17T19:18:36.243884" elapsed="0.000019"/>
+<status status="NOT RUN" start="2025-12-17T19:36:52.843501" elapsed="0.000020"/>
 </kw>
-<status status="NOT RUN" start="2025-12-17T19:18:36.243701" elapsed="0.000246"/>
+<status status="NOT RUN" start="2025-12-17T19:36:52.843316" elapsed="0.000270"/>
 </branch>
 <branch type="ELSE IF" condition="'${EMULATOR}' == 'browserstack'">
 <kw name="Open Application In Browserstack" owner="BrowserstackLibrary">
-<msg time="2025-12-17T19:18:54.630521" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:14.561070" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>automationName=UIAutomator2</arg>
 <arg>platformName=${PLATFORM_NAME}</arg>
@@ -404,21 +395,21 @@ Please check https://appium.io/docs/en/2.19/guides/caps/
 <arg>interactiveDebugging=${True}</arg>
 <doc>This keyword will open the application in Browserstack, sending the desired 
 capabilities that have been configured.</doc>
-<status status="PASS" start="2025-12-17T19:18:36.244126" elapsed="18.386480"/>
+<status status="PASS" start="2025-12-17T19:36:52.843770" elapsed="21.717393"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:18:36.243970" elapsed="18.386711"/>
+<status status="PASS" start="2025-12-17T19:36:52.843610" elapsed="21.717645"/>
 </branch>
-<status status="PASS" start="2025-12-17T19:18:36.243682" elapsed="18.387044"/>
+<status status="PASS" start="2025-12-17T19:36:52.843296" elapsed="21.718009"/>
 </if>
-<status status="PASS" start="2025-12-17T19:18:36.243530" elapsed="18.387269"/>
+<status status="PASS" start="2025-12-17T19:36:52.843138" elapsed="21.718247"/>
 </kw>
 <kw name="Access TED APP Without Login" owner="customKeywords">
 <kw name="Click in Lets Go" owner="welcomePage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:56.975654" level="INFO">criteria is Next
+<msg time="2025-12-17T19:37:17.136398" level="INFO">criteria is Next
 criteria is Next</msg>
-<msg time="2025-12-17T19:18:56.975728" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:17.136474" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
@@ -426,74 +417,74 @@ criteria is Next</msg>
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:18:54.632214" elapsed="2.343591"/>
+<status status="PASS" start="2025-12-17T19:37:14.562901" elapsed="2.573691"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:56.977717" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:18:57.182945" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:57.182994" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:17.138369" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:37:18.083748" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:37:18.083824" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:56.976056" elapsed="0.206994"/>
+<status status="PASS" start="2025-12-17T19:37:17.136853" elapsed="0.947049"/>
 </kw>
 <arg>${welcome.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:18:54.631577" elapsed="2.551570"/>
+<status status="PASS" start="2025-12-17T19:37:14.562223" elapsed="3.521804"/>
 </kw>
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:57.926138" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:57.926206" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:19.622956" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:37:19.623026" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:18:57.184182" elapsed="0.742142"/>
+<status status="PASS" start="2025-12-17T19:37:18.085144" elapsed="1.537950"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:57.927938" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:18:58.060566" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:18:58.060616" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:19.624693" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:37:20.190075" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:37:20.190144" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:57.926556" elapsed="0.134126"/>
+<status status="PASS" start="2025-12-17T19:37:19.623306" elapsed="0.566908"/>
 </kw>
 <arg>${welcome.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:18:57.183417" elapsed="0.877347"/>
+<status status="PASS" start="2025-12-17T19:37:18.084306" elapsed="2.106003"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:18:54.631360" elapsed="3.429480"/>
+<status status="PASS" start="2025-12-17T19:37:14.562015" elapsed="5.628361"/>
 </kw>
 <kw name="Select Interests" owner="interestPage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:59.147570" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
-<msg time="2025-12-17T19:18:59.147660" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:20.911830" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
+<msg time="2025-12-17T19:37:20.911914" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:18:58.062240" elapsed="1.085502"/>
+<status status="PASS" start="2025-12-17T19:37:20.191614" elapsed="0.720381"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:59.149467" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Technology"]'.</msg>
-<msg time="2025-12-17T19:18:59.444968" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
-<msg time="2025-12-17T19:18:59.445039" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:20.913420" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Technology"]'.</msg>
+<msg time="2025-12-17T19:37:21.477303" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
+<msg time="2025-12-17T19:37:21.477371" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:18:59.147988" elapsed="0.297123"/>
+<status status="PASS" start="2025-12-17T19:37:20.912234" elapsed="0.565207"/>
 </kw>
 <arg>${interest.${PLATFORM_NAME}.interestList.format(text='${interestName}')}</arg>
-<status status="PASS" start="2025-12-17T19:18:58.061531" elapsed="1.383682"/>
+<status status="PASS" start="2025-12-17T19:37:20.190954" elapsed="1.286579"/>
 </kw>
 <kw name="Wait Enabled And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Enabled" owner="customKeywords">
@@ -501,85 +492,82 @@ criteria is Next</msg>
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Enabled" owner="AppiumLibrary">
-<msg time="2025-12-17T19:18:59.446886" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:37:21.479257" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:19:00.277710" level="INFO">Element 'Next' is enabled .</msg>
-<msg time="2025-12-17T19:19:00.277805" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:00.277835" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:22.424311" level="INFO">Element 'Next' is enabled .</msg>
+<msg time="2025-12-17T19:37:22.424409" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:37:22.424439" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>*DEPRECATED!!* Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-17T19:18:59.446864" elapsed="0.831031"/>
+<status status="PASS" start="2025-12-17T19:37:21.479234" elapsed="0.945267"/>
 </kw>
-<msg time="2025-12-17T19:19:00.278015" level="INFO">${status} = True</msg>
+<msg time="2025-12-17T19:37:22.424650" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Element Should Be Enabled</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-12-17T19:18:59.446556" elapsed="0.831489"/>
+<status status="PASS" start="2025-12-17T19:37:21.478921" elapsed="0.945758"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2025-12-17T19:19:00.278619" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-12-17T19:37:22.425341" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status}</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-12-17T19:19:00.278266" elapsed="0.000434"/>
+<status status="PASS" start="2025-12-17T19:37:22.424892" elapsed="0.000543"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:18:59.446353" elapsed="0.832381"/>
+<status status="PASS" start="2025-12-17T19:37:21.478716" elapsed="0.946764"/>
 </iter>
-<status status="PASS" start="2025-12-17T19:18:59.446351" elapsed="0.832410"/>
+<status status="PASS" start="2025-12-17T19:37:21.478714" elapsed="0.946811"/>
 </while>
 <arg>${locator}</arg>
 <timeout value="10 seconds"/>
-<status status="PASS" start="2025-12-17T19:18:59.446100" elapsed="0.832714"/>
+<status status="PASS" start="2025-12-17T19:37:21.478454" elapsed="0.947155"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:00.279879" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:19:00.804889" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:00.804961" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:22.426712" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:37:22.992736" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:37:22.992815" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:00.278914" elapsed="0.526123"/>
+<status status="PASS" start="2025-12-17T19:37:22.425710" elapsed="0.567183"/>
 </kw>
 <arg>${interest.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:18:59.445467" elapsed="1.359678"/>
+<status status="PASS" start="2025-12-17T19:37:21.477799" elapsed="1.515218"/>
 </kw>
 <arg>${interest}</arg>
-<status status="PASS" start="2025-12-17T19:18:58.061066" elapsed="2.744157"/>
+<status status="PASS" start="2025-12-17T19:37:20.190621" elapsed="2.802473"/>
 </kw>
 <kw name="Select Looking For" owner="lookingForPage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:02.246917" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]
-xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
-<msg time="2025-12-17T19:19:02.246988" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
-  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:25.132637" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
+<msg time="2025-12-17T19:37:25.132721" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:00.806535" elapsed="1.440570"/>
+<status status="PASS" start="2025-12-17T19:37:22.994491" elapsed="2.138362"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:02.248413" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]'.</msg>
-<msg time="2025-12-17T19:19:02.501725" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
-<msg time="2025-12-17T19:19:02.501779" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:25.134418" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]'.</msg>
+<msg time="2025-12-17T19:37:25.665262" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
+<msg time="2025-12-17T19:37:25.665334" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:02.247342" elapsed="0.254510"/>
+<status status="PASS" start="2025-12-17T19:37:25.133103" elapsed="0.532303"/>
 </kw>
 <arg>${lookingFor.${PLATFORM_NAME}.lookingForList.format(text='${lookingForName}')}</arg>
-<status status="PASS" start="2025-12-17T19:19:00.805858" elapsed="1.696090"/>
+<status status="PASS" start="2025-12-17T19:37:22.993829" elapsed="2.671673"/>
 </kw>
 <kw name="Wait Enabled And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Enabled" owner="customKeywords">
@@ -587,94 +575,91 @@ xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="P
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Enabled" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:02.503777" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:37:25.667374" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:19:03.710553" level="INFO">Element 'Next' is enabled .</msg>
-<msg time="2025-12-17T19:19:03.710647" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:03.710677" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:26.503445" level="INFO">Element 'Next' is enabled .</msg>
+<msg time="2025-12-17T19:37:26.503545" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:37:26.503593" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>*DEPRECATED!!* Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-17T19:19:02.503755" elapsed="1.206982"/>
+<status status="PASS" start="2025-12-17T19:37:25.667352" elapsed="0.836315"/>
 </kw>
-<msg time="2025-12-17T19:19:03.710869" level="INFO">${status} = True</msg>
+<msg time="2025-12-17T19:37:26.503810" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Element Should Be Enabled</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-12-17T19:19:02.503457" elapsed="1.207440"/>
+<status status="PASS" start="2025-12-17T19:37:25.667048" elapsed="0.836785"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2025-12-17T19:19:03.711562" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-12-17T19:37:26.504342" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status}</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-12-17T19:19:03.711104" elapsed="0.000549"/>
+<status status="PASS" start="2025-12-17T19:37:26.503999" elapsed="0.000416"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:02.503230" elapsed="1.208467"/>
+<status status="PASS" start="2025-12-17T19:37:25.666855" elapsed="0.837593"/>
 </iter>
-<status status="PASS" start="2025-12-17T19:19:02.503228" elapsed="1.208506"/>
+<status status="PASS" start="2025-12-17T19:37:25.666853" elapsed="0.837622"/>
 </while>
 <arg>${locator}</arg>
 <timeout value="10 seconds"/>
-<status status="PASS" start="2025-12-17T19:19:02.502817" elapsed="1.208976"/>
+<status status="PASS" start="2025-12-17T19:37:25.666630" elapsed="0.837901"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:03.712884" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:19:05.005329" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:05.005421" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:26.505637" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:37:26.932880" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:37:26.932965" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:03.711896" elapsed="1.293606"/>
+<status status="PASS" start="2025-12-17T19:37:26.504658" elapsed="0.428397"/>
 </kw>
 <arg>${lookingFor.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:19:02.502178" elapsed="2.503450"/>
+<status status="PASS" start="2025-12-17T19:37:25.665788" elapsed="1.267394"/>
 </kw>
 <arg>${lookingFor}</arg>
-<status status="PASS" start="2025-12-17T19:19:00.805486" elapsed="4.200223"/>
+<status status="PASS" start="2025-12-17T19:37:22.993353" elapsed="3.939898"/>
 </kw>
 <kw name="Skip Sing In" owner="signInPage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:06.038614" level="INFO">criteria is SkipSignInLink</msg>
-<msg time="2025-12-17T19:19:06.038696" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:28.366909" level="INFO">criteria is SkipSignInLink</msg>
+<msg time="2025-12-17T19:37:28.366986" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:05.006996" elapsed="1.031779"/>
+<status status="PASS" start="2025-12-17T19:37:26.934326" elapsed="1.432751"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:06.040081" level="INFO">Clicking element 'SkipSignInLink'.</msg>
-<msg time="2025-12-17T19:19:06.227184" level="INFO">criteria is SkipSignInLink</msg>
-<msg time="2025-12-17T19:19:06.227236" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:28.368386" level="INFO">Clicking element 'SkipSignInLink'.</msg>
+<msg time="2025-12-17T19:37:29.055127" level="INFO">criteria is SkipSignInLink</msg>
+<msg time="2025-12-17T19:37:29.055193" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:06.038982" elapsed="0.188377"/>
+<status status="PASS" start="2025-12-17T19:37:28.367282" elapsed="0.687998"/>
 </kw>
 <arg>${signIn.skipButton}</arg>
-<status status="PASS" start="2025-12-17T19:19:05.006363" elapsed="1.221098"/>
+<status status="PASS" start="2025-12-17T19:37:26.933777" elapsed="2.121622"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:05.005968" elapsed="1.221569"/>
+<status status="PASS" start="2025-12-17T19:37:26.933455" elapsed="2.122004"/>
 </kw>
 <kw name="View Home" owner="homePage">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:08.409153" level="INFO">criteria is HomeScreen
-criteria is HomeScreen
+<msg time="2025-12-17T19:37:31.316286" level="INFO">criteria is HomeScreen
 criteria is HomeScreen
 criteria is HomeScreen</msg>
-<msg time="2025-12-17T19:19:08.409232" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
-  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:31.316369" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
@@ -684,110 +669,98 @@ criteria is HomeScreen</msg>
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${home.${PLATFORM_NAME}.homeScreen}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:06.228006" elapsed="2.181393"/>
+<status status="PASS" start="2025-12-17T19:37:29.055922" elapsed="2.260599"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:06.227730" elapsed="2.181765"/>
+<status status="PASS" start="2025-12-17T19:37:29.055665" elapsed="2.261017"/>
 </kw>
 <arg>interest=Technology</arg>
 <arg>lookingFor=Professional growth</arg>
-<status status="PASS" start="2025-12-17T19:18:54.631024" elapsed="13.778536"/>
+<status status="PASS" start="2025-12-17T19:37:14.561695" elapsed="16.755040"/>
 </kw>
 <kw name="Click In Browse Tab Icon" owner="homePage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:08.576364" level="INFO">criteria is BottomTab_Discover</msg>
-<msg time="2025-12-17T19:19:08.576413" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:31.775046" level="INFO">criteria is BottomTab_Discover</msg>
+<msg time="2025-12-17T19:37:31.775119" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:08.410598" elapsed="0.165877"/>
+<status status="PASS" start="2025-12-17T19:37:31.317781" elapsed="0.457427"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:08.577644" level="INFO">Clicking element 'BottomTab_Discover'.</msg>
-<msg time="2025-12-17T19:19:08.761673" level="INFO">criteria is BottomTab_Discover</msg>
-<msg time="2025-12-17T19:19:08.761736" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:31.776617" level="INFO">Clicking element 'BottomTab_Discover'.</msg>
+<msg time="2025-12-17T19:37:32.744135" level="INFO">criteria is BottomTab_Discover</msg>
+<msg time="2025-12-17T19:37:32.744212" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:08.576626" elapsed="0.185189"/>
+<status status="PASS" start="2025-12-17T19:37:31.775438" elapsed="0.968865"/>
 </kw>
 <arg>${home.${PLATFORM_NAME}.discoverButton}</arg>
-<status status="PASS" start="2025-12-17T19:19:08.410031" elapsed="0.351872"/>
+<status status="PASS" start="2025-12-17T19:37:31.317204" elapsed="1.427229"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:08.409755" elapsed="0.352209"/>
+<status status="PASS" start="2025-12-17T19:37:31.316925" elapsed="1.427572"/>
 </kw>
 <kw name="Search Video" owner="searchPage">
 <kw name="Wait Visible And Input Text" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:10.609893" level="INFO">xpath criteria: //android.widget.EditText[@text="Search"]
-xpath criteria: //android.widget.EditText[@text="Search"]</msg>
-<msg time="2025-12-17T19:19:10.609957" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
-  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:34.623005" level="INFO">xpath criteria: //android.widget.EditText[@text="Search"]</msg>
+<msg time="2025-12-17T19:37:34.623077" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:08.763050" elapsed="1.846973"/>
+<status status="PASS" start="2025-12-17T19:37:32.745664" elapsed="1.877493"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:10.611311" level="INFO">Clicking element '//android.widget.EditText[@text="Search"]'.</msg>
-<msg time="2025-12-17T19:19:11.991458" level="INFO">xpath criteria: //android.widget.EditText[@text="Search"]</msg>
-<msg time="2025-12-17T19:19:11.991541" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:34.624459" level="INFO">Clicking element '//android.widget.EditText[@text="Search"]'.</msg>
+<msg time="2025-12-17T19:37:36.308513" level="INFO">xpath criteria: //android.widget.EditText[@text="Search"]</msg>
+<msg time="2025-12-17T19:37:36.308638" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:10.610228" elapsed="1.381387"/>
+<status status="PASS" start="2025-12-17T19:37:34.623372" elapsed="1.685357"/>
 </kw>
 <kw name="Is Keyboard Shown" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:12.283088" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:36.707616" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <doc>Returns true or false if the device keyboard is displayed.</doc>
-<status status="PASS" start="2025-12-17T19:19:11.991862" elapsed="0.291320"/>
+<status status="PASS" start="2025-12-17T19:37:36.308945" elapsed="0.398804"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:12.284595" level="INFO">Typing text 'Technology' into text field '//android.widget.EditText[@text="Search"]'</msg>
-<msg time="2025-12-17T19:19:13.142949" level="INFO">xpath criteria: //android.widget.EditText[@text="Search"]</msg>
-<msg time="2025-12-17T19:19:13.143025" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:36.709054" level="INFO">Typing text 'Technology' into text field '//android.widget.EditText[@text="Search"]'</msg>
+<msg time="2025-12-17T19:37:37.282772" level="INFO">xpath criteria: //android.widget.EditText[@text="Search"]</msg>
+<msg time="2025-12-17T19:37:37.282846" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:12.283425" elapsed="0.859672"/>
+<status status="PASS" start="2025-12-17T19:37:36.707946" elapsed="0.574987"/>
 </kw>
 <arg>${search.${PLATFORM_NAME}.searchInput}</arg>
 <arg>${searchText}</arg>
-<status status="PASS" start="2025-12-17T19:19:08.762482" elapsed="4.380722"/>
+<status status="PASS" start="2025-12-17T19:37:32.745044" elapsed="4.538001"/>
 </kw>
 <arg>Technology</arg>
-<status status="PASS" start="2025-12-17T19:19:08.762147" elapsed="4.381166"/>
+<status status="PASS" start="2025-12-17T19:37:32.744737" elapsed="4.538377"/>
 </kw>
 <kw name="Select Search Video" owner="searchPage">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:16.842401" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
-xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
-xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
-xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
+<msg time="2025-12-17T19:37:40.997230" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
 xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
 xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
 xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]
 xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]</msg>
-<msg time="2025-12-17T19:19:16.842549" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
-  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
-  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
-  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:40.997325" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
@@ -801,127 +774,127 @@ xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${search.${PLATFORM_NAME}.resultList}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:13.144011" elapsed="3.698630"/>
+<status status="PASS" start="2025-12-17T19:37:37.283663" elapsed="3.713817"/>
 </kw>
 <kw name="Get Text" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:17.041290" level="INFO">Element 'xpath=(//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]' text is 'Kevin Kelly: How technology evolves' </msg>
-<msg time="2025-12-17T19:19:17.041353" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]</msg>
-<msg time="2025-12-17T19:19:17.041382" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:41.433581" level="INFO">Element 'xpath=(//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]' text is 'Kevin Kelly: How technology evolves' </msg>
+<msg time="2025-12-17T19:37:41.433667" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]</msg>
+<msg time="2025-12-17T19:37:41.433696" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
-<msg time="2025-12-17T19:19:17.041483" level="INFO">${result} = Kevin Kelly: How technology evolves</msg>
+<msg time="2025-12-17T19:37:41.433818" level="INFO">${result} = Kevin Kelly: How technology evolves</msg>
 <var>${result}</var>
 <arg>${search.${PLATFORM_NAME}.resultList}</arg>
 <doc>Returns the text of the element with the ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:16.842894" elapsed="0.198624"/>
+<status status="PASS" start="2025-12-17T19:37:40.997750" elapsed="0.436105"/>
 </kw>
 <kw name="Split String" owner="String">
-<msg time="2025-12-17T19:19:17.042090" level="INFO">${speaker} = Kevin Kelly</msg>
-<msg time="2025-12-17T19:19:17.042141" level="INFO">${title} = How technology evolves</msg>
+<msg time="2025-12-17T19:37:41.434337" level="INFO">${speaker} = Kevin Kelly</msg>
+<msg time="2025-12-17T19:37:41.434374" level="INFO">${title} = How technology evolves</msg>
 <var>${speaker}</var>
 <var>${title}</var>
 <arg>${result}</arg>
 <arg>separator=:${SPACE}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2025-12-17T19:19:17.041725" elapsed="0.000442"/>
+<status status="PASS" start="2025-12-17T19:37:41.434038" elapsed="0.000354"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2025-12-17T19:19:17.042665" level="INFO">${speaker} = Kevin Kelly</msg>
+<msg time="2025-12-17T19:37:41.434828" level="INFO">${speaker} = Kevin Kelly</msg>
 <arg>${speaker}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2025-12-17T19:19:17.042354" elapsed="0.000346"/>
+<status status="PASS" start="2025-12-17T19:37:41.434504" elapsed="0.000358"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2025-12-17T19:19:17.043031" level="INFO">${title} = How technology evolves</msg>
+<msg time="2025-12-17T19:37:41.435188" level="INFO">${title} = How technology evolves</msg>
 <arg>${title}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2025-12-17T19:19:17.042804" elapsed="0.000259"/>
+<status status="PASS" start="2025-12-17T19:37:41.434962" elapsed="0.000258"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:17.044435" level="INFO">Clicking element 'xpath=(//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]'.</msg>
-<msg time="2025-12-17T19:19:17.336915" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]</msg>
-<msg time="2025-12-17T19:19:17.336972" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:41.436582" level="INFO">Clicking element 'xpath=(//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]'.</msg>
+<msg time="2025-12-17T19:37:41.961931" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]</msg>
+<msg time="2025-12-17T19:37:41.962007" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${search.${PLATFORM_NAME}.resultList}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:17.043155" elapsed="0.293885"/>
+<status status="PASS" start="2025-12-17T19:37:41.435310" elapsed="0.526787"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:17.338825" level="INFO">Clicking element 'xpath=(//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]'.</msg>
-<msg time="2025-12-17T19:19:18.196624" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]</msg>
-<msg time="2025-12-17T19:19:18.196700" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:41.963839" level="INFO">Clicking element 'xpath=(//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]'.</msg>
+<msg time="2025-12-17T19:37:42.996460" level="INFO">xpath criteria: (//android.widget.Button[@resource-id="Touchable"])[3]//android.widget.TextView[@resource-id="Typography"]</msg>
+<msg time="2025-12-17T19:37:42.996540" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${search.${PLATFORM_NAME}.resultList}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:17.337204" elapsed="0.859562"/>
+<status status="PASS" start="2025-12-17T19:37:41.962340" elapsed="1.034337"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:13.143624" elapsed="5.053301"/>
+<status status="PASS" start="2025-12-17T19:37:37.283363" elapsed="5.713419"/>
 </kw>
 <kw name="View Result Search" owner="resultSearchPage">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:19.488725" level="INFO">xpath criteria: (//android.widget.ImageView[@resource-id="CacheableImage"])[1]</msg>
-<msg time="2025-12-17T19:19:19.488804" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:44.893819" level="INFO">xpath criteria: (//android.widget.ImageView[@resource-id="CacheableImage"])[1]</msg>
+<msg time="2025-12-17T19:37:44.893900" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${resultSearch.${PLATFORM_NAME}.cacheableImage}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:18.197602" elapsed="1.291290"/>
+<status status="PASS" start="2025-12-17T19:37:42.997293" elapsed="1.896698"/>
 </kw>
 <kw name="Element Should Contain Text" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:19.490889" level="INFO">Verifying element '//android.widget.TextView[@resource-id="VideoTitle"]' contains text 'How technology evolves'.</msg>
-<msg time="2025-12-17T19:19:19.771655" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="VideoTitle"]</msg>
-<msg time="2025-12-17T19:19:19.771706" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:44.895758" level="INFO">Verifying element '//android.widget.TextView[@resource-id="VideoTitle"]' contains text 'How technology evolves'.</msg>
+<msg time="2025-12-17T19:37:45.404833" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="VideoTitle"]</msg>
+<msg time="2025-12-17T19:37:45.404912" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${resultSearch.${PLATFORM_NAME}.videoTitle}</arg>
 <arg>${title}</arg>
 <doc>Verifies the element identified by ``locator`` contains the text ``expected``.</doc>
-<status status="PASS" start="2025-12-17T19:19:19.489165" elapsed="0.282602"/>
+<status status="PASS" start="2025-12-17T19:37:44.894248" elapsed="0.510758"/>
 </kw>
 <kw name="Element Should Contain Text" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:19.773651" level="INFO">Verifying element '//android.widget.TextView[@resource-id="VideoSpeakers"]' contains text 'Kevin Kelly'.</msg>
-<msg time="2025-12-17T19:19:19.975643" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="VideoSpeakers"]</msg>
-<msg time="2025-12-17T19:19:19.975698" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:45.406696" level="INFO">Verifying element '//android.widget.TextView[@resource-id="VideoSpeakers"]' contains text 'Kevin Kelly'.</msg>
+<msg time="2025-12-17T19:37:45.870679" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="VideoSpeakers"]</msg>
+<msg time="2025-12-17T19:37:45.870822" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${resultSearch.${PLATFORM_NAME}.videoSpeaker}</arg>
 <arg>${speaker}</arg>
 <doc>Verifies the element identified by ``locator`` contains the text ``expected``.</doc>
-<status status="PASS" start="2025-12-17T19:19:19.771997" elapsed="0.203774"/>
+<status status="PASS" start="2025-12-17T19:37:45.405235" elapsed="0.465678"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:18.197195" elapsed="1.778700"/>
+<status status="PASS" start="2025-12-17T19:37:42.997010" elapsed="2.874024"/>
 </kw>
 <kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
 <kw name="Update Test Case Status in BrowserStack" owner="BrowserstackLibrary">
-<msg time="2025-12-17T19:19:19.977725" level="INFO">Appium Session ID: 59896a7453c689da5fa2128b423b598ba97abb36</msg>
-<msg time="2025-12-17T19:19:20.224186" level="INFO">PASS
+<msg time="2025-12-17T19:37:45.872774" level="INFO">Appium Session ID: 3222f7c32c9e504fe7aeda15c4ac43ccec524ee9</msg>
+<msg time="2025-12-17T19:37:46.114138" level="INFO">PASS
 {"status": "passed", "reason": "Test Passed"}</msg>
 <doc>This keyword must be used as 'TEARDOWN TEST'. </doc>
-<status status="PASS" start="2025-12-17T19:19:19.976707" elapsed="0.247533"/>
+<status status="PASS" start="2025-12-17T19:37:45.871713" elapsed="0.242506"/>
 </kw>
 <kw name="Close Application" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:21.097187" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:37:46.841397" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <doc>Closes the current application and the webdriver session.</doc>
-<status status="PASS" start="2025-12-17T19:19:20.224396" elapsed="0.872926"/>
+<status status="PASS" start="2025-12-17T19:37:46.114398" elapsed="0.727135"/>
 </kw>
 <arg>Update Test Case Status in BrowserStack</arg>
 <arg>Close Application</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2025-12-17T19:19:19.976203" elapsed="1.121220"/>
+<status status="PASS" start="2025-12-17T19:37:45.871304" elapsed="0.970370"/>
 </kw>
 <tag>regressivo</tag>
-<status status="PASS" start="2025-12-17T19:18:36.243094" elapsed="44.854408"/>
+<status status="PASS" start="2025-12-17T19:36:52.842650" elapsed="53.999086"/>
 </test>
-<status status="PASS" start="2025-12-17T19:18:36.224616" elapsed="44.873341"/>
+<status status="PASS" start="2025-12-17T19:36:52.823122" elapsed="54.018970"/>
 </suite>
 <suite id="s1-s1-s3" name="Surpreenda-me" source="/home/runner/work/AppiumRobot/AppiumRobot/tests/Surpreenda-me.robot">
 <test id="s1-s1-s3-t1" name="Cenário: Acessar Surpreenda-me" line="6">
@@ -941,13 +914,13 @@ Please check https://appium.io/docs/en/2.19/guides/caps/
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | No     | alias             |</doc>
-<status status="NOT RUN" start="2025-12-17T19:19:21.106469" elapsed="0.000021"/>
+<status status="NOT RUN" start="2025-12-17T19:37:46.850364" elapsed="0.000019"/>
 </kw>
-<status status="NOT RUN" start="2025-12-17T19:19:21.106245" elapsed="0.000292"/>
+<status status="NOT RUN" start="2025-12-17T19:37:46.850168" elapsed="0.000257"/>
 </branch>
 <branch type="ELSE IF" condition="'${EMULATOR}' == 'browserstack'">
 <kw name="Open Application In Browserstack" owner="BrowserstackLibrary">
-<msg time="2025-12-17T19:19:38.906062" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:05.731166" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>automationName=UIAutomator2</arg>
 <arg>platformName=${PLATFORM_NAME}</arg>
@@ -961,21 +934,21 @@ Please check https://appium.io/docs/en/2.19/guides/caps/
 <arg>interactiveDebugging=${True}</arg>
 <doc>This keyword will open the application in Browserstack, sending the desired 
 capabilities that have been configured.</doc>
-<status status="PASS" start="2025-12-17T19:19:21.106724" elapsed="17.799419"/>
+<status status="PASS" start="2025-12-17T19:37:46.850637" elapsed="18.880627"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:21.106564" elapsed="17.799667"/>
+<status status="PASS" start="2025-12-17T19:37:46.850450" elapsed="18.880911"/>
 </branch>
-<status status="PASS" start="2025-12-17T19:19:21.106224" elapsed="17.800068"/>
+<status status="PASS" start="2025-12-17T19:37:46.850145" elapsed="18.881260"/>
 </if>
-<status status="PASS" start="2025-12-17T19:19:21.106062" elapsed="17.800299"/>
+<status status="PASS" start="2025-12-17T19:37:46.849979" elapsed="18.881484"/>
 </kw>
 <kw name="Access TED APP Without Login" owner="customKeywords">
 <kw name="Click in Lets Go" owner="welcomePage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:41.170594" level="INFO">criteria is Next
+<msg time="2025-12-17T19:38:08.244327" level="INFO">criteria is Next
 criteria is Next</msg>
-<msg time="2025-12-17T19:19:41.170678" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:08.244411" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
@@ -983,74 +956,74 @@ criteria is Next</msg>
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:38.907696" elapsed="2.263061"/>
+<status status="PASS" start="2025-12-17T19:38:05.732800" elapsed="2.511709"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:41.172691" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:19:41.375976" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:41.376027" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:08.245837" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:38:09.216388" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:38:09.216469" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:41.171015" elapsed="0.205087"/>
+<status status="PASS" start="2025-12-17T19:38:08.244766" elapsed="0.971856"/>
 </kw>
 <arg>${welcome.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:19:38.907173" elapsed="2.469017"/>
+<status status="PASS" start="2025-12-17T19:38:05.732247" elapsed="3.484489"/>
 </kw>
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:42.087748" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:42.087834" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:10.563313" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:38:10.563375" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:41.377017" elapsed="0.710887"/>
+<status status="PASS" start="2025-12-17T19:38:09.217550" elapsed="1.345952"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:42.089268" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:19:42.280863" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:42.280924" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:10.564901" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:38:11.078713" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:38:11.078794" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:42.088118" elapsed="0.192876"/>
+<status status="PASS" start="2025-12-17T19:38:10.563743" elapsed="0.515141"/>
 </kw>
 <arg>${welcome.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:19:41.376465" elapsed="0.904618"/>
+<status status="PASS" start="2025-12-17T19:38:09.216943" elapsed="1.862061"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:38.906962" elapsed="3.374193"/>
+<status status="PASS" start="2025-12-17T19:38:05.732038" elapsed="5.347047"/>
 </kw>
 <kw name="Select Interests" owner="interestPage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:43.757002" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
-<msg time="2025-12-17T19:19:43.757078" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:11.895523" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
+<msg time="2025-12-17T19:38:11.895644" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:42.282287" elapsed="1.474871"/>
+<status status="PASS" start="2025-12-17T19:38:11.080289" elapsed="0.815423"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:43.758694" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Technology"]'.</msg>
-<msg time="2025-12-17T19:19:44.016732" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
-<msg time="2025-12-17T19:19:44.016806" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:11.896983" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Technology"]'.</msg>
+<msg time="2025-12-17T19:38:12.503951" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
+<msg time="2025-12-17T19:38:12.504017" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:43.757438" elapsed="0.259449"/>
+<status status="PASS" start="2025-12-17T19:38:11.895915" elapsed="0.608170"/>
 </kw>
 <arg>${interest.${PLATFORM_NAME}.interestList.format(text='${interestName}')}</arg>
-<status status="PASS" start="2025-12-17T19:19:42.281661" elapsed="1.735328"/>
+<status status="PASS" start="2025-12-17T19:38:11.079662" elapsed="1.424499"/>
 </kw>
 <kw name="Wait Enabled And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Enabled" owner="customKeywords">
@@ -1058,82 +1031,82 @@ criteria is Next</msg>
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Enabled" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:44.018736" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:38:12.505905" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:19:44.777951" level="INFO">Element 'Next' is enabled .</msg>
-<msg time="2025-12-17T19:19:44.778045" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:44.778075" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:13.507333" level="INFO">Element 'Next' is enabled .</msg>
+<msg time="2025-12-17T19:38:13.507430" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:38:13.507459" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>*DEPRECATED!!* Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-17T19:19:44.018714" elapsed="0.759464"/>
+<status status="PASS" start="2025-12-17T19:38:12.505882" elapsed="1.001639"/>
 </kw>
-<msg time="2025-12-17T19:19:44.778330" level="INFO">${status} = True</msg>
+<msg time="2025-12-17T19:38:13.507667" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Element Should Be Enabled</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-12-17T19:19:44.018407" elapsed="0.759955"/>
+<status status="PASS" start="2025-12-17T19:38:12.505532" elapsed="1.002164"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2025-12-17T19:19:44.779001" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-12-17T19:38:13.508200" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status}</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-12-17T19:19:44.778571" elapsed="0.000524"/>
+<status status="PASS" start="2025-12-17T19:38:13.507861" elapsed="0.000415"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:44.018171" elapsed="0.760968"/>
+<status status="PASS" start="2025-12-17T19:38:12.505330" elapsed="1.002986"/>
 </iter>
-<status status="PASS" start="2025-12-17T19:19:44.018169" elapsed="0.761008"/>
+<status status="PASS" start="2025-12-17T19:38:12.505328" elapsed="1.003015"/>
 </while>
 <arg>${locator}</arg>
 <timeout value="10 seconds"/>
-<status status="PASS" start="2025-12-17T19:19:44.017948" elapsed="0.761296"/>
+<status status="PASS" start="2025-12-17T19:38:12.505091" elapsed="1.003307"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:44.780344" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:19:44.986436" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:44.986489" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:13.509462" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:38:13.999688" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:38:13.999755" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:44.779393" elapsed="0.207171"/>
+<status status="PASS" start="2025-12-17T19:38:13.508495" elapsed="0.491327"/>
 </kw>
 <arg>${interest.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:19:44.017296" elapsed="0.969361"/>
+<status status="PASS" start="2025-12-17T19:38:12.504404" elapsed="1.495517"/>
 </kw>
 <arg>${interest}</arg>
-<status status="PASS" start="2025-12-17T19:19:42.281364" elapsed="2.705369"/>
+<status status="PASS" start="2025-12-17T19:38:11.079306" elapsed="2.920680"/>
 </kw>
 <kw name="Select Looking For" owner="lookingForPage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:46.041765" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
-<msg time="2025-12-17T19:19:46.041846" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:15.385127" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
+<msg time="2025-12-17T19:38:15.385198" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:44.988203" elapsed="1.053726"/>
+<status status="PASS" start="2025-12-17T19:38:14.001379" elapsed="1.383938"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:46.043823" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]'.</msg>
-<msg time="2025-12-17T19:19:46.293563" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
-<msg time="2025-12-17T19:19:46.293630" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:15.386643" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]'.</msg>
+<msg time="2025-12-17T19:38:16.645413" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
+<msg time="2025-12-17T19:38:16.645491" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:46.042192" elapsed="0.251516"/>
+<status status="PASS" start="2025-12-17T19:38:15.385523" elapsed="1.260072"/>
 </kw>
 <arg>${lookingFor.${PLATFORM_NAME}.lookingForList.format(text='${lookingForName}')}</arg>
-<status status="PASS" start="2025-12-17T19:19:44.987470" elapsed="1.306329"/>
+<status status="PASS" start="2025-12-17T19:38:14.000515" elapsed="2.645192"/>
 </kw>
 <kw name="Wait Enabled And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Enabled" owner="customKeywords">
@@ -1141,90 +1114,93 @@ Verifies that the element identified by ``locator`` is enabled.</doc>
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Enabled" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:46.295729" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:38:16.647476" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:19:47.014550" level="INFO">Element 'Next' is enabled .</msg>
-<msg time="2025-12-17T19:19:47.014645" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:47.014676" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:17.516465" level="INFO">Element 'Next' is enabled .</msg>
+<msg time="2025-12-17T19:38:17.516590" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:38:17.516628" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>*DEPRECATED!!* Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-17T19:19:46.295707" elapsed="0.719032"/>
+<status status="PASS" start="2025-12-17T19:38:16.647453" elapsed="0.869248"/>
 </kw>
-<msg time="2025-12-17T19:19:47.014871" level="INFO">${status} = True</msg>
+<msg time="2025-12-17T19:38:17.516820" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Element Should Be Enabled</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-12-17T19:19:46.295406" elapsed="0.719495"/>
+<status status="PASS" start="2025-12-17T19:38:16.647146" elapsed="0.869704"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2025-12-17T19:19:47.015576" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-12-17T19:38:17.517369" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status}</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-12-17T19:19:47.015111" elapsed="0.000561"/>
+<status status="PASS" start="2025-12-17T19:38:17.517026" elapsed="0.000423"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:46.295185" elapsed="0.720533"/>
+<status status="PASS" start="2025-12-17T19:38:16.646951" elapsed="0.870531"/>
 </iter>
-<status status="PASS" start="2025-12-17T19:19:46.295183" elapsed="0.720570"/>
+<status status="PASS" start="2025-12-17T19:38:16.646949" elapsed="0.870559"/>
 </while>
 <arg>${locator}</arg>
 <timeout value="10 seconds"/>
-<status status="PASS" start="2025-12-17T19:19:46.294961" elapsed="0.720864"/>
+<status status="PASS" start="2025-12-17T19:38:16.646710" elapsed="0.870871"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:47.016892" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2025-12-17T19:19:47.199082" level="INFO">criteria is Next</msg>
-<msg time="2025-12-17T19:19:47.199133" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:17.518636" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-12-17T19:38:17.939235" level="INFO">criteria is Next</msg>
+<msg time="2025-12-17T19:38:17.939310" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:47.015929" elapsed="0.183316"/>
+<status status="PASS" start="2025-12-17T19:38:17.517681" elapsed="0.421705"/>
 </kw>
 <arg>${lookingFor.nextButton}</arg>
-<status status="PASS" start="2025-12-17T19:19:46.294050" elapsed="0.905314"/>
+<status status="PASS" start="2025-12-17T19:38:16.645985" elapsed="1.293515"/>
 </kw>
 <arg>${lookingFor}</arg>
-<status status="PASS" start="2025-12-17T19:19:44.986994" elapsed="2.212446"/>
+<status status="PASS" start="2025-12-17T19:38:14.000186" elapsed="3.939423"/>
 </kw>
 <kw name="Skip Sing In" owner="signInPage">
 <kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:48.294068" level="INFO">criteria is SkipSignInLink</msg>
-<msg time="2025-12-17T19:19:48.294149" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:19.263486" level="INFO">criteria is SkipSignInLink</msg>
+<msg time="2025-12-17T19:38:19.263607" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:47.200759" elapsed="1.093471"/>
+<status status="PASS" start="2025-12-17T19:38:17.940684" elapsed="1.322997"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:48.295880" level="INFO">Clicking element 'SkipSignInLink'.</msg>
-<msg time="2025-12-17T19:19:48.489666" level="INFO">criteria is SkipSignInLink</msg>
-<msg time="2025-12-17T19:19:48.489720" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:19.264959" level="INFO">Clicking element 'SkipSignInLink'.</msg>
+<msg time="2025-12-17T19:38:19.799124" level="INFO">criteria is SkipSignInLink</msg>
+<msg time="2025-12-17T19:38:19.799206" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:48.294518" elapsed="0.195280"/>
+<status status="PASS" start="2025-12-17T19:38:19.263883" elapsed="0.535402"/>
 </kw>
 <arg>${signIn.skipButton}</arg>
-<status status="PASS" start="2025-12-17T19:19:47.200018" elapsed="1.289890"/>
+<status status="PASS" start="2025-12-17T19:38:17.940112" elapsed="1.859336"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:47.199647" elapsed="1.290324"/>
+<status status="PASS" start="2025-12-17T19:38:17.939818" elapsed="1.859702"/>
 </kw>
 <kw name="View Home" owner="homePage">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:50.617727" level="INFO">criteria is HomeScreen
+<msg time="2025-12-17T19:38:22.175724" level="INFO">criteria is HomeScreen
+criteria is HomeScreen
 criteria is HomeScreen</msg>
-<msg time="2025-12-17T19:19:50.617801" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:22.175816" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+  return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
+/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
@@ -1232,78 +1208,78 @@ criteria is HomeScreen</msg>
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${home.${PLATFORM_NAME}.homeScreen}</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:48.490516" elapsed="2.127362"/>
+<status status="PASS" start="2025-12-17T19:38:19.799998" elapsed="2.375898"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:48.490173" elapsed="2.127805"/>
+<status status="PASS" start="2025-12-17T19:38:19.799738" elapsed="2.376236"/>
 </kw>
 <arg>interest=Technology</arg>
 <arg>lookingFor=Professional growth</arg>
-<status status="PASS" start="2025-12-17T19:19:38.906627" elapsed="11.711413"/>
+<status status="PASS" start="2025-12-17T19:38:05.731714" elapsed="16.444326"/>
 </kw>
 <kw name="Click in Surprise Me" owner="homePage">
 <kw name="Swipe Until Element Is Visible" owner="customKeywords">
 <kw name="Get Window Width" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:50.685144" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:22.369426" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
-<msg time="2025-12-17T19:19:50.685311" level="INFO">${x} = 1080</msg>
+<msg time="2025-12-17T19:38:22.369671" level="INFO">${x} = 1080</msg>
 <var>${x}</var>
 <doc>Returns the current device window width.</doc>
-<status status="PASS" start="2025-12-17T19:19:50.619536" elapsed="0.065821"/>
+<status status="PASS" start="2025-12-17T19:38:22.177223" elapsed="0.192490"/>
 </kw>
 <kw name="Get Window Height" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:50.746643" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:22.556651" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
-<msg time="2025-12-17T19:19:50.746788" level="INFO">${y} = 2179</msg>
+<msg time="2025-12-17T19:38:22.556824" level="INFO">${y} = 2179</msg>
 <var>${y}</var>
 <doc>Returns the current device window height.</doc>
-<status status="PASS" start="2025-12-17T19:19:50.685564" elapsed="0.061270"/>
+<status status="PASS" start="2025-12-17T19:38:22.369909" elapsed="0.186941"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-12-17T19:19:50.747562" level="INFO">${start_x} = 540.0</msg>
+<msg time="2025-12-17T19:38:22.557481" level="INFO">${start_x} = 540.0</msg>
 <var>${start_x}</var>
 <arg>${x} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-12-17T19:19:50.747051" elapsed="0.000541"/>
+<status status="PASS" start="2025-12-17T19:38:22.557067" elapsed="0.000438"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-12-17T19:19:50.747979" level="INFO">${start_y} = 1089.5</msg>
+<msg time="2025-12-17T19:38:22.557896" level="INFO">${start_y} = 1089.5</msg>
 <var>${start_y}</var>
 <arg>${y} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-12-17T19:19:50.747701" elapsed="0.000301"/>
+<status status="PASS" start="2025-12-17T19:38:22.557624" elapsed="0.000294"/>
 </kw>
 <while condition="${True}">
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:50.954925" level="INFO">criteria is BottomTab_SurpriseMe</msg>
-<msg time="2025-12-17T19:19:50.954988" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:23.075189" level="INFO">criteria is BottomTab_SurpriseMe</msg>
+<msg time="2025-12-17T19:38:23.075273" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${locator}</arg>
 <arg>1</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-17T19:19:50.748560" elapsed="0.206498"/>
+<status status="PASS" start="2025-12-17T19:38:22.558460" elapsed="0.516893"/>
 </kw>
-<msg time="2025-12-17T19:19:50.955192" level="INFO">${status} = True</msg>
+<msg time="2025-12-17T19:38:23.075535" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <arg>1</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-12-17T19:19:50.748296" elapsed="0.206935"/>
+<status status="PASS" start="2025-12-17T19:38:22.558202" elapsed="0.517393"/>
 </kw>
 <if>
 <branch type="IF" condition="${status}">
 <kw name="Exit For Loop" owner="BuiltIn">
-<msg time="2025-12-17T19:19:50.955747" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-12-17T19:38:23.076271" level="INFO">Exiting for loop altogether.</msg>
 <doc>Stops executing the enclosing FOR loop.</doc>
-<status status="PASS" start="2025-12-17T19:19:50.955573" elapsed="0.000229"/>
+<status status="PASS" start="2025-12-17T19:38:23.075970" elapsed="0.000380"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:50.955399" elapsed="0.000475"/>
+<status status="PASS" start="2025-12-17T19:38:23.075727" elapsed="0.000656"/>
 </branch>
-<status status="PASS" start="2025-12-17T19:19:50.955372" elapsed="0.000532"/>
+<status status="PASS" start="2025-12-17T19:38:23.075691" elapsed="0.000720"/>
 </if>
 <kw name="Swipe" owner="AppiumLibrary">
 <arg>start_x=${start_x}</arg>
@@ -1311,55 +1287,55 @@ criteria is HomeScreen</msg>
 <arg>offset_x=${start_x}</arg>
 <arg>offset_y=0</arg>
 <doc>Swipes from one point to another point, for an optional ``duration``.</doc>
-<status status="NOT RUN" start="2025-12-17T19:19:50.955994" elapsed="0.000018"/>
+<status status="NOT RUN" start="2025-12-17T19:38:23.076504" elapsed="0.000019"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:50.748048" elapsed="0.207995"/>
+<status status="PASS" start="2025-12-17T19:38:22.557968" elapsed="0.518611"/>
 </iter>
-<status status="PASS" start="2025-12-17T19:19:50.748046" elapsed="0.208019"/>
+<status status="PASS" start="2025-12-17T19:38:22.557966" elapsed="0.518644"/>
 </while>
 <arg>${home.${PLATFORM_NAME}.surpriseMeButton}</arg>
-<status status="PASS" start="2025-12-17T19:19:50.618797" elapsed="0.337310"/>
+<status status="PASS" start="2025-12-17T19:38:22.176650" elapsed="0.900014"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:50.957434" level="INFO">Clicking element 'BottomTab_SurpriseMe'.</msg>
-<msg time="2025-12-17T19:19:51.185209" level="INFO">criteria is BottomTab_SurpriseMe</msg>
-<msg time="2025-12-17T19:19:51.185300" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:23.078024" level="INFO">Clicking element 'BottomTab_SurpriseMe'.</msg>
+<msg time="2025-12-17T19:38:23.522677" level="INFO">criteria is BottomTab_SurpriseMe</msg>
+<msg time="2025-12-17T19:38:23.522756" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}
 /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <arg>${home.${PLATFORM_NAME}.surpriseMeButton}</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-17T19:19:50.956192" elapsed="0.229178"/>
+<status status="PASS" start="2025-12-17T19:38:23.076754" elapsed="0.446085"/>
 </kw>
-<status status="PASS" start="2025-12-17T19:19:50.618317" elapsed="0.567159"/>
+<status status="PASS" start="2025-12-17T19:38:22.176259" elapsed="1.346701"/>
 </kw>
 <kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
 <kw name="Update Test Case Status in BrowserStack" owner="BrowserstackLibrary">
-<msg time="2025-12-17T19:19:51.187400" level="INFO">Appium Session ID: bc660ab94b67a506e7414a4cc62d94b50af0d293</msg>
-<msg time="2025-12-17T19:19:51.724115" level="INFO">PASS
+<msg time="2025-12-17T19:38:23.524940" level="INFO">Appium Session ID: 1b60f5e0acd3894498e21372ce840e99940532ee</msg>
+<msg time="2025-12-17T19:38:23.849029" level="INFO">PASS
 {"status": "passed", "reason": "Test Passed"}</msg>
 <doc>This keyword must be used as 'TEARDOWN TEST'. </doc>
-<status status="PASS" start="2025-12-17T19:19:51.186315" elapsed="0.537874"/>
+<status status="PASS" start="2025-12-17T19:38:23.523890" elapsed="0.325218"/>
 </kw>
 <kw name="Close Application" owner="AppiumLibrary">
-<msg time="2025-12-17T19:19:52.709763" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+<msg time="2025-12-17T19:38:24.514009" level="INFO">/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/appium/webdriver/appium_connection.py:65: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
   return {**super().get_remote_connection_headers(parsed_url, keep_alive=keep_alive), **cls.extra_headers}</msg>
 <doc>Closes the current application and the webdriver session.</doc>
-<status status="PASS" start="2025-12-17T19:19:51.724387" elapsed="0.985486"/>
+<status status="PASS" start="2025-12-17T19:38:23.849288" elapsed="0.664851"/>
 </kw>
 <arg>Update Test Case Status in BrowserStack</arg>
 <arg>Close Application</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2025-12-17T19:19:51.185813" elapsed="1.524147"/>
+<status status="PASS" start="2025-12-17T19:38:23.523344" elapsed="0.990870"/>
 </kw>
 <tag>regressivo</tag>
-<status status="PASS" start="2025-12-17T19:19:21.105569" elapsed="31.604457"/>
+<status status="PASS" start="2025-12-17T19:37:46.849507" elapsed="37.664781"/>
 </test>
-<status status="PASS" start="2025-12-17T19:19:21.098554" elapsed="31.611876"/>
+<status status="PASS" start="2025-12-17T19:37:46.842542" elapsed="37.672145"/>
 </suite>
-<status status="PASS" start="2025-12-17T19:17:57.868073" elapsed="114.842956"/>
+<status status="PASS" start="2025-12-17T19:35:45.723835" elapsed="158.791354"/>
 </suite>
-<status status="PASS" start="2025-12-17T19:17:57.837014" elapsed="114.874568"/>
+<status status="PASS" start="2025-12-17T19:35:45.691048" elapsed="158.824627"/>
 </suite>
 <statistics>
 <total>
@@ -1377,17 +1353,17 @@ criteria is HomeScreen</msg>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-12-17T19:18:27.918763" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:36:43.140322" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:18:30.418680" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:36:46.144120" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:18:59.446886" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:37:21.479257" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:19:02.503777" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:37:25.667374" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:19:44.018736" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:38:12.505905" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
-<msg time="2025-12-17T19:19:46.295729" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
+<msg time="2025-12-17T19:38:16.647476" level="WARN">Keyword 'AppiumLibrary.Element Should Be Enabled' is deprecated. Use `Expect Element` instead
 Verifies that the element identified by ``locator`` is enabled.</msg>
 </errors>
 </robot>
