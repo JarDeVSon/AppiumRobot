@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4 (Python 3.12.12 on linux)" generated="2025-12-17T19:16:33.090011" rpa="false" schemaversion="5">
+<suite id="s1" name="AppiumRobot" source="/home/runner/work/AppiumRobot/AppiumRobot">
+<suite id="s1-s1" name="Tests" source="/home/runner/work/AppiumRobot/AppiumRobot/tests">
+<kw name="Send App To Browserstack" owner="customKeywords" type="SETUP">
+<if>
+<branch type="IF" condition="'${EMULATOR}' == 'browserstack'">
+<kw name="Upload Application to Browserstack" owner="BrowserstackLibrary">
+<arg>app_name=ted.apk</arg>
+<arg>app_path=/home/runner/work/AppiumRobot/AppiumRobot/resources/utils${/}..${/}app${/}app.apk</arg>
+<arg>custom_id=TED_OUVINTE_123</arg>
+<doc>Uploads an app to Browserstack, either through the PATH or app URL.</doc>
+<status status="NOT RUN" start="2025-12-17T19:16:33.301534" elapsed="0.000028"/>
+</kw>
+<status status="NOT RUN" start="2025-12-17T19:16:33.300907" elapsed="0.000713"/>
+</branch>
+<status status="PASS" start="2025-12-17T19:16:33.300882" elapsed="0.000766"/>
+</if>
+<status status="PASS" start="2025-12-17T19:16:33.300729" elapsed="0.000974"/>
+</kw>
+<suite id="s1-s1-s1" name="Acessar-App" source="/home/runner/work/AppiumRobot/AppiumRobot/tests/Acessar-App.robot">
+<test id="s1-s1-s1-t1" name="Cenário: Acessar TED sem Login" line="5">
+<kw name="Open TED App" owner="openApp" type="SETUP">
+<if>
+<branch type="IF" condition="'${EMULATOR}' == 'local'">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-17T19:16:33.310880" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused")': /session</msg>
+<msg time="2025-12-17T19:16:33.311499" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused")': /session</msg>
+<msg time="2025-12-17T19:16:33.312033" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused")': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-17T19:16:33.312830" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-17T19:16:33.312655" elapsed="0.030291">No application is open</status>
+</kw>
+<msg time="2025-12-17T19:16:33.343922" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-17T19:16:33.344048" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused"))</msg>
+<arg>remote_url=http://localhost:4723</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=Google Pixel 7 Pro</arg>
+<arg>app=/home/runner/work/AppiumRobot/AppiumRobot/resources/utils${/}..${/}app${/}app.apk</arg>
+<arg>disableIdLocatorAutocompletion=${True}</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-17T19:16:33.309353" elapsed="0.036330">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused"))</status>
+</kw>
+<status status="FAIL" start="2025-12-17T19:16:33.309155" elapsed="0.036618">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused"))</status>
+</branch>
+<branch type="ELSE IF" condition="'${EMULATOR}' == 'browserstack'">
+<kw name="Open Application In Browserstack" owner="BrowserstackLibrary">
+<arg>automationName=UIAutomator2</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=Google Pixel 7 Pro</arg>
+<arg>project=TED_ROBOTCOURSES</arg>
+<arg>build=TED_%{GH_ACTIONS_RUNNER=LOCAL}</arg>
+<arg>name=${TEST_NAME}</arg>
+<arg>bstack:options=${BROWSERSTACK_OPTIONS}</arg>
+<arg>disableIdLocatorAutocompletion=${True}</arg>
+<arg>browserstack.idleTimeout=60</arg>
+<arg>interactiveDebugging=${True}</arg>
+<doc>This keyword will open the application in Browserstack, sending the desired 
+capabilities that have been configured.</doc>
+<status status="NOT RUN" start="2025-12-17T19:16:33.345922" elapsed="0.000020"/>
+</kw>
+<status status="NOT RUN" start="2025-12-17T19:16:33.345808" elapsed="0.000179"/>
+</branch>
+<status status="FAIL" start="2025-12-17T19:16:33.309136" elapsed="0.036873">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused"))</status>
+</if>
+<status status="FAIL" start="2025-12-17T19:16:33.308948" elapsed="0.037182">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused"))</status>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Update Test Case Status in BrowserStack" owner="BrowserstackLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-17T19:16:33.347033" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-17T19:16:33.346904" elapsed="0.000556">No application is open</status>
+</kw>
+<msg time="2025-12-17T19:16:33.348426" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-17T19:16:33.348562" level="FAIL">No application is open</msg>
+<doc>This keyword must be used as 'TEARDOWN TEST'. </doc>
+<status status="FAIL" start="2025-12-17T19:16:33.346743" elapsed="0.002214">No application is open</status>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-17T19:16:33.349399" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-17T19:16:33.349271" elapsed="0.000524">No application is open</status>
+</kw>
+<msg time="2025-12-17T19:16:33.350755" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-17T19:16:33.350887" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-17T19:16:33.349107" elapsed="0.002169">No application is open</status>
+</kw>
+<arg>Update Test Case Status in BrowserStack</arg>
+<arg>Close Application</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-12-17T19:16:33.346348" elapsed="0.005048">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<tag>regressivo</tag>
+<status status="FAIL" start="2025-12-17T19:16:33.308438" elapsed="0.043033">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</test>
+<status status="FAIL" start="2025-12-17T19:16:33.301744" elapsed="0.050271"/>
+</suite>
+<status status="FAIL" start="2025-12-17T19:16:33.121809" elapsed="0.230850"/>
+</suite>
+<status status="FAIL" start="2025-12-17T19:16:33.090829" elapsed="0.262359"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regressivo</stat>
+</tag>
+<suite>
+<stat name="AppiumRobot" id="s1" pass="0" fail="1" skip="0">AppiumRobot</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">AppiumRobot.Tests</stat>
+<stat name="Acessar-App" id="s1-s1-s1" pass="0" fail="1" skip="0">AppiumRobot.Tests.Acessar-App</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-17T19:16:33.310880" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused")': /session</msg>
+<msg time="2025-12-17T19:16:33.311499" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused")': /session</msg>
+<msg time="2025-12-17T19:16:33.312033" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 111] Connection refused")': /session</msg>
+<msg time="2025-12-17T19:16:33.343922" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-17T19:16:33.348426" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-17T19:16:33.350755" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
