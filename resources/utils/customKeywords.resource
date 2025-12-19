@@ -105,7 +105,7 @@ Send App To Browserstack
 
 Cancel Version Update
 
-    IF    '${PLATFORM_NAME}' == 'Android'
+    IF    '${PLATFORM_NAME}' == 'android'
         ${deniedButton}=    Set Variable    //android.widget.Button[@resource-id="android:id/button2"]
     ELSE
         ${deniedButton}=    Set Variable    //XCUIElementTypeButton[@name="Not Now"]
