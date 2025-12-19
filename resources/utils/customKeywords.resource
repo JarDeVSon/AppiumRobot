@@ -7,7 +7,7 @@ Wait Until Element Is Enabled
     [Timeout]    10s
 
     WHILE    ${True}
-        ${status}  Run Keyword And Return Status  Element Should Be Enabled    ${locator}
+        ${status}  Run Keyword And Return Status  Wait Until Element Is Enabled  ${locator}
         Exit For Loop If    ${status}
     END
 
@@ -55,26 +55,29 @@ Swipe to Element
 
 Swipe Until Element Is Visible
     [Arguments]    ${locator}
-    
-    ${x}  Get Window Width
-    ${y}  Get Window Height
 
-    ${start_x}  Evaluate  ${x} / 2
-    ${start_y}  Evaluate  ${y} / 2
+    ${width}=    Get Window Width
+    ${height}=   Get Window Height
+
+    ${start_x}=  Evaluate    ${width} / 2
+    ${start_y}=  Evaluate    ${height} * 0.7
+    ${end_y}=    Evaluate    ${height} * 0.3
 
     WHILE    ${True}
-        ${status}    Run Keyword And Return Status    Wait Until Element Is Visible    ${locator}  1
+        ${visible}=    Run Keyword And Return Status
+        ...    Wait Until Element Is Visible    ${locator}    1
 
-        IF    ${status}
+        IF    ${visible}
             Exit For Loop
         END
 
-        Swipe    
+        Swipe
         ...    start_x=${start_x}
         ...    start_y=${start_y}
-        ...    offset_x=${start_x}
-        ...    offset_y=0
+        ...    offset_x=0
+        ...    offset_y=${end_y}
     END
+
 
 Access TED APP Without Login
     [Arguments]    ${interest}    ${lookingFor}
@@ -86,17 +89,30 @@ Access TED APP Without Login
     View Home
 
 Send App To Browserstack
-    IF    '${EMULATOR}' == 'browserstack'
+
+    IF    '${EMULATOR}' == 'browserstack' and '${PLATFORM_NAME}' == 'android'
         Upload Application to Browserstack    # robotcode: ignore
         ...    app_name=ted.apk
-        ...    app_path=${CURDIR}${/}..${/}app${/}app.apk
-        ...    custom_id=TED_OUVINTE_123
+        ...    app_path=${CURDIR}${/}..${/}app${/}android${/}app.apk
+        ...    custom_id=TED_ANDROID_APP_
+
+    ELSE IF    '${EMULATOR}' == 'browserstack' and '${PLATFORM_NAME}' == 'ios'
+        Upload Application to Browserstack    # robotcode: ignore
+        ...    app_name=ted.ipa
+        ...    app_path=${CURDIR}${/}..${/}app${/}ios${/}app.ipa
+        ...    custom_id=TED_IOS_APP_
     END
 
 Cancel Version Update
 
-    ${deniedButton}  Set Variable  //android.widget.Button[@resource-id="android:id/button2"]
-    ${status}  Run Keyword And Return Status    Wait Until Element Is Visible    ${deniedButton}  timeout=3
+    IF    '${PLATFORM_NAME}' == 'Android'
+        ${deniedButton}=    Set Variable    //android.widget.Button[@resource-id="android:id/button2"]
+    ELSE
+        ${deniedButton}=    Set Variable    //XCUIElementTypeButton[@name="Not Now"]
+    END
+
+    ${status}=    Run Keyword And Return Status
+    ...    Wait Until Element Is Visible    ${deniedButton}    3
 
     IF    ${status}
         Wait Visible And Click Element    ${deniedButton}
