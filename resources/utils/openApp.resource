@@ -32,7 +32,7 @@ Open TED App
         Open Application
         ...    remote_url=http://localhost:4723
         ...    automationName=UIAutomator2
-        ...    platformName=Android
+        ...    platformName=${PLATFORM_NAME}
         ...    deviceName=Google Pixel 7 Pro
         ...    app=${CURDIR}${/}..${/}app${/}android${/}app.apk
         ...    disableIdLocatorAutocompletion=${True}
@@ -54,7 +54,7 @@ Open TED App
         Open Application
         ...    remote_url=http://localhost:4723
         ...    automationName=XCUITest
-        ...    platformName=iOS
+        ...    platformName=${PLATFORM_NAME}
         ...    deviceName=iPhone 14
         ...    platformVersion=17
         ...    app=${CURDIR}${/}..${/}app${/}ios${/}TED.app
@@ -62,7 +62,7 @@ Open TED App
     ELSE IF    '${PLATFORM_NAME}' == 'ios' and '${EMULATOR}' == 'browserstack'
         Open Application In Browserstack    # robotcode: ignore
         ...    automationName=XCUITest
-        ...    platformName=iOS
+        ...    platformName=${PLATFORM_NAME}
         ...    deviceName=iPhone 14
         ...    platformVersion=17
         ...    project=TED_ios
